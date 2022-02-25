@@ -10,10 +10,10 @@ export default new Vuetify({
       },
     themes: {
       light: {
-        primary: '#20BF9C',
-        secondary: '#0FAF7C',
-        accent: '#20BFDC',
-        info: '#009CCC',
+        primary: '#41B883',
+        secondary: '#00ADD8',
+        accent: '#34495E',
+        info: '#00A29C',
         error: '#FF5252',
         success: '#4CAF50',
         warning: '#FFC107'

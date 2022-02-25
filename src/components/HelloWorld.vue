@@ -48,7 +48,7 @@
                 {{ section.subtitle }}
               </v-card-subtitle>
               <v-card-actions>
-                <v-btn class="pa-3" outlined rounded>
+                <v-btn class="pa-3" outlined rounded :to="section.to">
                   Ver más
                 </v-btn>
               </v-card-actions>
@@ -88,17 +88,20 @@
         {
           title: 'Mi trabajo',
           subtitle: 'Conoce mis proyectos y experiencia',
-          icon: 'mdi-crane'
+          icon: 'mdi-crane',
+          to: 'about'
         },
         {
           title: 'Mi capacitación',
           subtitle: 'Detalles acerca de mi formación',
-          icon: 'mdi-book-multiple'
+          icon: 'mdi-book-multiple',
+          to: 'about'
         },
         {
           title: 'Más sobre mí',
           subtitle: 'Lo básico a nivel personal',
-          icon: 'mdi-meditation'
+          icon: 'mdi-meditation',
+          to: 'about'
         }
       ],
       articles: [
