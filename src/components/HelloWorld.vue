@@ -90,10 +90,10 @@
           to: 'projects'
         },
         {
-          title: 'Mi capacitación',
-          subtitle: 'Detalles acerca de mi formación',
+          title: 'Mis habilidades',
+          subtitle: 'Stack de desarrollo y herramientas',
           icon: 'mdi-book-multiple',
-          to: 'about'
+          to: 'background'
         },
         {
           title: 'Más sobre mí',
