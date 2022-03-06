@@ -4,12 +4,10 @@
       <v-col>
         <v-card class="pa-2 blob" tile elevation="4" max-width="700">
           <v-avatar size="166">
-            <v-avatar color="primary" size="166">
-              <v-img class="mt-2" height="235" src="@/assets/img/avatar.png"></v-img>
-            </v-avatar>
+              <v-img class="mt-2" height="250" src="@/assets/img/avatar3.png"></v-img>
           </v-avatar>
           <v-card-title>
-            👋 Hola, soy&nbsp;<span class="primary--text">Edgar parucho</span>
+            👋 Hola, soy&nbsp;<span class="accent--text">Edgar parucho</span>
           </v-card-title>
           <v-card-subtitle class="text-start">
             💘 Padre y esposo, 💻 desarrollador apasionado, 👨🏻‍🎓 autodidacta...
@@ -89,7 +87,7 @@
           title: 'Mi trabajo',
           subtitle: 'Conoce mis proyectos y experiencia',
           icon: 'mdi-crane',
-          to: 'about'
+          to: 'projects'
         },
         {
           title: 'Mi capacitación',
