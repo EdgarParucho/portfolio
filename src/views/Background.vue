@@ -1,6 +1,6 @@
-  <template>
-  <v-container>
-    <v-row align="center">
+<template>
+  <v-container class="page">
+    <v-row>
       <v-col>
         <v-card dark align="end" color="primary" max-width="400">
           <v-icon color="white" size="100">mdi-book-multiple</v-icon>
@@ -15,20 +15,10 @@
     </v-row>
       <v-row align="center">
         <v-col :cols="mobileBreakpoint ? 12 : 6">
-          <v-card-title :class="mobileBreakpoint ? 'display-1' : 'display-4'">
-            Stack de desarrollo</v-card-title>
-          <v-card-subtitle class="headline">Tecnologías implementadas en mis proyectos</v-card-subtitle>
+          <v-img src="@/assets/graphics/prototyping-process-bro.svg" max-width="80%" eager ></v-img>
         </v-col>
         <v-col :cols="mobileBreakpoint ? 12 : 6">
-          <v-img max-width="80%" src="@/assets/graphics/code-typing-bro.svg"></v-img>
-        </v-col>
-      </v-row>
-      <v-row align="center">
-        <v-col :cols="mobileBreakpoint ? 12 : 6">
-          <v-img max-width="80%" src="@/assets/graphics/prototyping-process-bro.svg"></v-img>
-        </v-col>
-        <v-col :cols="mobileBreakpoint ? 12 : 6">
-          <v-sheet class="pa-1" rounded="xl">
+          <v-sheet class="pa-1" elevation="3" rounded="xl">
           <v-card-subtitle class="display-1">
             Frontend
           </v-card-subtitle>
@@ -46,7 +36,7 @@
             </p>
           </v-card-text>
           <div class="d-flex justify-space-around my-5">
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-html.svg"></v-img>
@@ -54,7 +44,7 @@
                   HTML
                 </v-tooltip>
               </v-card>
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-css.svg"></v-img>
@@ -62,7 +52,7 @@
                   CSS
                 </v-tooltip>
               </v-card>
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-js.svg"></v-img>
@@ -72,7 +62,7 @@
               </v-card>
             </div>
             <div class="d-flex justify-space-around my-5">
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vue.svg"></v-img>
@@ -80,7 +70,7 @@
                   Vue JS
                 </v-tooltip>
               </v-card>
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/logo.svg"></v-img>
@@ -88,7 +78,7 @@
                   Vuetify
                 </v-tooltip>
               </v-card>
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vue-router.png"></v-img>
@@ -96,7 +86,7 @@
                   Vue Router
                 </v-tooltip>
               </v-card>
-              <v-card>
+              <v-card color="white">
                 <v-tooltip color="accent" bottom>
                   <template v-slot:activator=" { on }">
                     <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vuex.png"></v-img>
@@ -110,7 +100,7 @@
       </v-row>
     <v-row align="center">
       <v-col :cols="mobileBreakpoint ? 12 : 6">
-        <v-sheet class="pa-1" rounded="xl">
+        <v-sheet class="pa-1" elevation="3" rounded="xl">
           <v-card-subtitle class="display-1">
             Backend
           </v-card-subtitle>
@@ -122,7 +112,7 @@
             </p>
           </v-card-text>
           <div class="d-flex justify-space-around my-5">
-            <v-card>
+            <v-card color="white">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-node.svg"></v-img>
@@ -130,7 +120,7 @@
                 Node JS
               </v-tooltip>
             </v-card>
-            <v-card class="text-center" width="40" height="40">
+            <v-card class="text-center" color="white" width="40" height="40">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <span class="display-1 text--secondary" v-on="on">
@@ -140,7 +130,7 @@
                 Express JS
               </v-tooltip>
             </v-card>
-            <v-card>
+            <v-card color="white">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-mongodb.svg"></v-img>
@@ -160,7 +150,7 @@
         <v-img max-width="80%" src="@/assets/graphics/version-control-bro.svg"></v-img>
       </v-col>
       <v-col :cols="mobileBreakpoint ? 12 : 6">
-        <v-sheet class="pa-1" rounded="xl">
+        <v-sheet class="pa-1" elevation="3" rounded="xl">
           <v-card-subtitle class="display-1">
             Otras herramientas
           </v-card-subtitle>
@@ -178,7 +168,7 @@
             </p>
           </v-card-text>
           <div class="d-flex justify-space-around my-5">
-            <v-card>
+            <v-card color="white">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-git.svg"></v-img>
@@ -186,7 +176,7 @@
                 Git
               </v-tooltip>
             </v-card>
-            <v-card class="text-center" width="40" height="40">
+            <v-card color="white">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-github.svg"></v-img>
@@ -194,7 +184,7 @@
                 GitHub
               </v-tooltip>
             </v-card>
-            <v-card>
+            <v-card color="white">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-notion.svg"></v-img>
@@ -202,7 +192,7 @@
                 Notion
               </v-tooltip>
             </v-card>
-            <v-card>
+            <v-card color="white">
               <v-tooltip color="accent" bottom>
                 <template v-slot:activator=" { on }">
                   <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-asana.svg"></v-img>

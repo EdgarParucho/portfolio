@@ -10,14 +10,14 @@ export default new Vuetify({
       },
     themes: {
       light: {
-        primary: '#41B883',
-        secondary: '#00ADD8',
-        accent: '#34495E',
+        primary: '#10AF82',
+        secondary: '#34495E',
+        accent: '#00ADD8',
         info: '#00A29C',
         error: '#FF5252',
         success: '#4CAF50',
         warning: '#FFC107'
-      },
+      }
     },
   },
 });

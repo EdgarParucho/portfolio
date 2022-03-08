@@ -1,11 +1,23 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        <v-card class="pa-2 blob" tile elevation="4" max-width="700">
-          <v-avatar size="166">
-              <v-img class="mt-2" height="250" src="@/assets/img/avatar3.png"></v-img>
-          </v-avatar>
+      <v-col :align="mobileBreakpoint ? 'center' : 'start'">
+        <v-card class="pa-2 blob-scene" tile elevation="4" max-width="700">
+          <div class="d-flex justify-space-between align-start">
+            <v-avatar size="200">
+              <v-img class="mt-2" height="290" src="@/assets/img/avatar.png"></v-img>
+            </v-avatar>
+            <v-card-actions class="justify-end">
+              <v-tooltip  v-for="link, i of links" :key="i" bottom color="secondary">
+                <template v-slot:activator="{ on }">
+                  <v-btn v-on="on" icon :large="mobileBreakpoint" :x-large="!mobileBreakpoint" color="secondary">
+                    <v-icon>{{ link.icon }}</v-icon>
+                  </v-btn>
+                </template>
+                {{ link.name }}
+              </v-tooltip>
+            </v-card-actions>
+          </div>
           <v-card-title>
             👋 Hola, soy&nbsp;<span class="accent--text">Edgar parucho</span>
           </v-card-title>
@@ -17,24 +29,14 @@
             <br>
             Si deseas construir algo o hablar conmigo, contáctame, estoy para servirte.
           </v-card-text>
-          <v-card-actions class="justify-end">
-            <v-tooltip  v-for="link, i of links" :key="i" top color="info">
-              <template v-slot:activator="{ on }">
-                <v-btn v-on="on" icon x-large color="accent">
-                  <v-icon>{{ link.icon }}</v-icon>
-                </v-btn>
-              </template>
-              {{ link.name }}
-            </v-tooltip>
-          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
     <v-row align="center" justify="space-between">
-      <v-col :cols="mobileBreakpoint ? 12 : 6">
+      <v-col :cols="mobileBreakpoint ? 12 : 8" :align="mobileBreakpoint ? 'center' : 'start'">
         <v-img max-width="80%" src="@/assets/graphics/developer-activity-bro.svg"></v-img>
       </v-col>
-      <v-col :cols="mobileBreakpoint ? 12 : 3">
+      <v-col :cols="mobileBreakpoint ? 12 : 4" :align="mobileBreakpoint ? 'center' : 'start'">
         <v-row v-for="section, i of sections" :key="i">
           <v-col>
             <v-card dark align="end" color="primary" max-width="400">
@@ -57,7 +59,7 @@
     </v-row>
     <v-row>
       <v-col :cols="mobileBreakpoint ? 12 : 4" v-for="article, i of articles" :key="i">
-        <v-card class="pa-2">
+        <v-card class="pa-2" elevation="5">
           <v-img :src="article.cover" max-height="410" />
           <v-card-title class="text-no-wrap">
             {{ article.title.main }}&nbsp;<span class="info--text">{{ article.title.keyword }}</span>
