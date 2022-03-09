@@ -15,7 +15,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <v-card>
+        <v-card color="transparent" elevation="0">
           <v-card-title class="display-4">Mantra</v-card-title>
           <v-card-subtitle class="ml-2 headline">Para una gestión eficiente</v-card-subtitle>
           <v-row>
@@ -23,30 +23,32 @@
               v-for="image, k in images"
               :key="k"
               class="d-flex child-flex"
-              :cols="mobile ? 12 : 3"
+              :cols="mobileBreakpoint ? 12 : 3"
             >
-              <v-img
-                :src="image.src"
-                aspect-ratio="1"
-                class="grey lighten-2"
-              >
-                <template v-slot:placeholder>
-                  <v-row
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
-                    <v-progress-circular
-                      indeterminate
-                      color="grey lighten-5"
-                    ></v-progress-circular>
-                  </v-row>
-                </template>
-              </v-img>
+              <v-card>
+                <v-img
+                  :src="image.src"
+                  aspect-ratio="1"
+                  class="grey lighten-2"
+                >
+                  <template v-slot:placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        indeterminate
+                        color="grey lighten-5"
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
+              </v-card>
             </v-col>
           </v-row>
           <v-row>
-            <v-col :cols="mobile ? 12 : 6">
+            <v-col :cols="mobileBreakpoint ? 12 : 6">
               <v-card-subtitle class="text-center headline">Acerca del proyecto</v-card-subtitle>
                 <v-card-text class="text--primary">
                 <v-card-subtitle class="title">¿De que se trata?</v-card-subtitle>
@@ -69,7 +71,7 @@
                 </v-card-text>
 
               </v-col>
-              <v-col :cols="mobile ? 12 : 6">
+              <v-col :cols="mobileBreakpoint ? 12 : 6">
                 <v-card-subtitle class="text-center headline">Características generales</v-card-subtitle>
                 <v-card-text>
                   <v-list>
@@ -151,9 +153,6 @@
 
   export default {
     name: 'About',
-    
-    components: {
-    },
 
     data () {
       return {
@@ -168,7 +167,7 @@
               { id: 4, name: 'Control de servicios por validar para certificar el cumplimiento y nivel de atención.' },
               { id: 5, name: 'Medios para administrar datos de clientes, oficinas, productos y piezas a través de la interfaz gráfica.' },
               { id: 6, name: 'Gestión de usuarios y roles a través de la interfaz gráfica.' },
-              { id: 7, name: 'Control de la información de contratos de clientes relevante para los usuarios.' },
+              { id: 7, name: 'Control de la información de contratos de clientes en un sistema accesible para el equipo.' },
             ]
           },
           {
@@ -216,7 +215,7 @@
       }
     },
     computed: {
-      mobile () {
+      mobileBreakpoint () {
         return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs
       }
     }
