@@ -11,7 +11,7 @@
     </v-card>
     <v-row align="center">
       <v-col :cols="mobile ? 12: 6">
-        <v-img src="@/assets/graphics/parents-bro.svg"></v-img>
+        <v-img src="@/assets/graphics/parents-bro.svg" max-width="80%" eager></v-img>
       </v-col>
       <v-col>
         <v-card class="pa-2" max-width="600">
@@ -69,12 +69,12 @@
         </v-card>
       </v-col>
       <v-col :cols="mobile ? 12: 6">
-        <v-img src="@/assets/graphics/website-creator-bro.svg"></v-img>
+        <v-img src="@/assets/graphics/website-creator-bro.svg" max-width="80%" eager></v-img>
       </v-col>
     </v-row>
     <v-row align="center">
       <v-col :cols="mobile ? 12: 6">
-        <v-img src="@/assets/graphics/critical-thinking-bro-1.svg"></v-img>
+        <v-img src="@/assets/graphics/critical-thinking-bro-1.svg" max-width="80%" eager></v-img>
       </v-col>
       <v-col>
         <v-card class="pa-2" max-width="600">
