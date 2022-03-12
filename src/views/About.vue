@@ -1,14 +1,6 @@
 <template>
   <v-container>
-    <v-card dark align="end" color="primary" max-width="400">
-      <v-icon color="white" size="100">mdi-meditation</v-icon>
-      <v-card-title>
-        Más sobre mí
-      </v-card-title>
-      <v-card-subtitle class="white--text text-start">
-        Lo básico a nivel personal
-      </v-card-subtitle>
-    </v-card>
+    <section-card :section="$router.history.current" />
     <v-row align="center">
       <v-col :cols="mobile ? 12: 6">
         <v-img src="@/assets/graphics/parents-bro.svg" max-width="80%" eager></v-img>
@@ -110,12 +102,12 @@
 </template>
 
 <script>
+import SectionCard from '@/components/SectionCard.vue'
 
   export default {
     name: 'About',
 
-    components: {
-    },
+    components: { SectionCard },
     computed: {
       mobile () {
         return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs

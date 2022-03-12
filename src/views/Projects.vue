@@ -1,18 +1,6 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
-        <v-card dark align="end" color="primary" max-width="400">
-          <v-icon color="white" size="100">mdi-crane</v-icon>
-          <v-card-title>
-            Mi trabajo
-          </v-card-title>
-          <v-card-subtitle class="white--text text-start">
-            Conoce mis proyectos y experiencia
-          </v-card-subtitle>
-        </v-card>
-      </v-col>
-    </v-row>
+    <section-card :section="$router.history.current" />
     <v-row>
       <v-col cols="12">
         <v-card color="transparent" elevation="0">
@@ -150,10 +138,11 @@
 </template>
 
 <script>
+import SectionCard from '@/components/SectionCard.vue'
 
   export default {
     name: 'About',
-
+    components: { SectionCard },
     data () {
       return {
         items: [
