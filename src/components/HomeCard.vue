@@ -17,10 +17,10 @@
         </v-card-actions>
       </div>
       <v-card-title>
-        👋 Hola, soy&nbsp;<span class="accent--text">Edgar parucho</span>
+        👋 Hola, soy&nbsp;<span class="accent--text">Edgar Parucho</span>
       </v-card-title>
       <v-card-subtitle class="text-start">
-        💘 Padre y esposo enamorado, 💻 desarrollador apasionado, 👨🏻‍🎓 estudiante incansable.
+        💘 Padre+esposo enamorado, 💻 desarrollador apasionado, 👨🏻‍🎓 estudiante incansable
       </v-card-subtitle>
       <v-card-text class="text-start font-weight-bold">
         Dedico este espacio para compartirte un poco sobre mi identidad.

@@ -15,15 +15,7 @@
     </v-row>
     <v-row>
       <v-col :cols="mobileBreakpoint ? 12 : 4" v-for="article, i of articles" :key="i">
-        <v-card class="pa-2" elevation="5" disabled>
-          <v-img :src="article.cover" max-height="410" />
-          <v-card-title class="subtitle-1 font-weight-bold">
-            {{ article.title.main }}&nbsp;<span class="info--text">{{ article.title.keyword }}</span>
-          </v-card-title>
-          <v-card-subtitle class="subtitle-1">
-            {{ article.description }}
-          </v-card-subtitle>
-        </v-card>
+        <article-card :article="article" />
       </v-col>
     </v-row>
   </v-container>
@@ -32,9 +24,10 @@
 <script>
 import HomeCard from '@/components/HomeCard.vue'
 import SectionCard from '@/components/SectionCard.vue'
+import ArticleCard from '@/components/ArticleCard.vue'
   export default {
     name: 'Home',
-    components: { HomeCard, SectionCard },
+    components: { HomeCard, SectionCard, ArticleCard },
     data: () => ({
       articles: [
         {
@@ -51,8 +44,7 @@ import SectionCard from '@/components/SectionCard.vue'
           cover: require('@/assets/img/article_2022.jpg'),
           title: { main: 'Mis planes para el', keyword: '2022' },
           description: 'Lo que me propongo para el año en curso'
-        },
-        
+        }
       ]
     }),
     computed: {
