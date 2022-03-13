@@ -36,7 +36,7 @@ import ProjectAbout from '@/components/ProjectAbout.vue'
 import ProjectSpecs from '@/components/ProjectSpecs.vue'
 
   export default {
-    name: 'About',
+    name: 'Projects',
     components: { SectionCard, ProjectImage, ProjectAbout, ProjectSpecs },
     data () {
       return {

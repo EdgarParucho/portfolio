@@ -15,6 +15,6 @@
 <script>
 export default {
   name: 'ProjectImage',
-  props: ['image', 'mobileBreakpoint']
+  props: ['image']
 }
 </script>

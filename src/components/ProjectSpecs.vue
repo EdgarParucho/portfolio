@@ -73,7 +73,7 @@
 
 <script>
 export default {
-  name: 'ProjectSection',
-  props: ['project', 'mobileBreakpoint']
+  name: 'ProjectSpecs',
+  props: ['project']
 }
 </script>

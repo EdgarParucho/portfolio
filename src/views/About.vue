@@ -1,115 +1,33 @@
 <template>
   <v-container>
     <section-card :section="$router.history.current" />
-    <v-row align="center">
-      <v-col :cols="mobile ? 12: 6">
-        <v-img src="@/assets/graphics/parents-bro.svg" max-width="80%" eager></v-img>
+    <v-row align="center" v-for="aspect, i of aspects" :key="i">
+      <v-col :cols="mobileBreakpoint ? 12: 6" :order="i%2">
+        <v-img :src="aspect.img" max-width="80%" eager></v-img>
       </v-col>
       <v-col>
-        <v-card class="pa-2" max-width="600">
-          <div class="justify-space-between d-flex">
-            <v-avatar class="mx-1" color="primary" size="70">
-              <v-icon x-large>mdi-ring</v-icon>
-            </v-avatar>
-            <v-chip color="secondary" label>Familia</v-chip>
-          </div>
-          <v-card-title>Lo primero en mi escala de valores</v-card-title>
-          <v-card-subtitle>Esposo de Liz y padre de Leah</v-card-subtitle>
-          <v-card-text class="text--primary">
-            <p>
-              Me convertí en esposo y padre en el 2016. Desde entonces, cada decisión importante
-              parte y orbita alrededor de este aspecto.
-            </p>
-            <p>
-              Liz tiene 27, es Ingeniero de Sistemas. Entre tanto, he aprendido que las diferencias y
-              semejanzas pueden ser positivamente poderosas si harmonizan y que trabajar en
-              equipo es necesario, no opcional.
-            </p>
-            <p>
-              Leah tiene 5, está en tercer nivel. Ella es solo pureza, la muestra de que todo se puede aprender.
-              Considero que no hay un obstáculo justificable en nuestro camino cuándo hacemos algo por nuestros hijos.
-            </p>
-          </v-card-text>
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row align="center">
-      <v-col>
-        <v-card class="pa-2" max-width="600">
-          <div class="justify-space-between d-flex">
-            <v-avatar class="ma-3" color="primary" size="70">
-              <v-icon x-large>mdi-laptop</v-icon>
-            </v-avatar>
-            <v-chip color="secondary" label>Área de desempeño</v-chip>
-          </div>
-          <v-card-title>
-            Soy desarrollador web
-          </v-card-title>
-          <v-card-subtitle>
-            Puedo crear y mejorar sitios o aplicaciones que funcionan en el navegador.
-          </v-card-subtitle>
-          <v-card-text class="text--primary">
-            <p>
-              Crear interfaces amigables y sistemas lógicos eficientes se convirtió en mi pasión.
-            </p>
-            <p>
-              Convertirme en desarrollador siempre fue un objetivo. Aunque fueron varios años y
-              circunstancias extraordinarias las que me llevaron a ejercer, ahora he aprendido a
-              construir mi futuro con acciones y decisiones enfocadas en mis objetivos.
-            </p>
-          </v-card-text>
-        </v-card>
-      </v-col>
-      <v-col :cols="mobile ? 12: 6">
-        <v-img src="@/assets/graphics/website-creator-bro.svg" max-width="80%" eager></v-img>
-      </v-col>
-    </v-row>
-    <v-row align="center">
-      <v-col :cols="mobile ? 12: 6">
-        <v-img src="@/assets/graphics/critical-thinking-bro-1.svg" max-width="80%" eager></v-img>
-      </v-col>
-      <v-col>
-        <v-card class="pa-2" max-width="600">
-          <div class="justify-space-between d-flex">
-            <v-avatar class="mx-1" color="primary" size="70">
-              <v-icon x-large>mdi-lightbulb-on</v-icon>
-            </v-avatar>
-            <v-chip color="secondary" label>Soft skills</v-chip>
-          </div>
-          <v-card-title>Lo que transmito a mi entorno y proyectos</v-card-title>
-          <v-card-subtitle>Características no técnicas</v-card-subtitle>
-          <v-card-text class="text--primary">
-            <p>
-              Organización. Para fluir en mi espacio y facilitar autoevaluaciones.
-            </p>
-            <p>
-              Innovación. Siempre alerta a nuevas y mejores formas de hacer las cosas.
-            </p>
-            <p>
-              Productividad. Oriento mi enfoque en tareas con dirección al objetivo.
-            </p>
-            <p>
-              Autodisciplina. Fundamental para lograr mis objetivos y la mejora continua.
-            </p>
-            <p>
-              Teamwork. Tan necesario como poderoso en términos de resultados y crecimiento.
-            </p>
-          </v-card-text>
-        </v-card>
+        <about-item :aspect="aspect"></about-item>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+import aspects from '@/helpers/aspects.js'
 import SectionCard from '@/components/SectionCard.vue'
+import AboutItem from '@/components/AboutItem.vue'
 
   export default {
     name: 'About',
 
-    components: { SectionCard },
+    components: { SectionCard, AboutItem },
+    data: () => {
+      return {
+        aspects
+      }
+    },
     computed: {
-      mobile () {
+      mobileBreakpoint () {
         return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs
       }
     }
