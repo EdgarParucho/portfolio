@@ -1,103 +1,91 @@
 <template>
   <v-container class="page">
-    <v-row>
-      <v-col>
-        <v-card dark align="end" color="primary" max-width="400">
-          <v-icon color="white" size="100">mdi-book-multiple</v-icon>
-          <v-card-title>
-            Mis habilidades
-          </v-card-title>
-          <v-card-subtitle class="white--text text-start">
-            Stack de desarrollo y herramientas
-          </v-card-subtitle>
-        </v-card>
+    <section-card :section="$router.history.current" />
+    <v-row align="center">
+      <v-col :cols="mobileBreakpoint ? 12 : 6">
+        <v-img src="@/assets/graphics/prototyping-process-bro.svg" max-width="80%" eager ></v-img>
+      </v-col>
+      <v-col :cols="mobileBreakpoint ? 12 : 6">
+        <v-sheet class="pa-1" elevation="3" rounded="xl">
+        <v-card-subtitle class="display-1">
+          Frontend
+        </v-card-subtitle>
+        <v-card-text>
+          <p>
+            El frontend representa la interfaz que maneja la interacción del cliente o usuario. La base de un proyecto a nivel de frontend puede
+            resumirse a estructura, estilo y funcionalidad, por lo que es fundamental manejar de forma correcta la semántica con <strong>HTML</strong>, el
+            diseño con <strong>CSS</strong> y la lógica a través de <strong>JavaScript</strong>.
+          </p>
+          <p>
+            El frontend es comúnmente manejado con frameworks y librerías ya que estos proponen estructuras y herramientas
+            orientadas a potenciar la eficiencia y escalabilidad. <strong>Vue JS</strong> es el framework de JavaScript que domino, con este construí
+            <router-link to="projects">Mantra</router-link>. Me he involucrado y enamorado desde entonces con su ecosistema. En combinación con <strong>Vue
+              Router</strong> para el enrutamiento, <strong>Vuex</strong> para manejar el estado y <strong>Vuetify</strong> para el diseño, he construido interfaces óptimas y atractivas.
+          </p>
+        </v-card-text>
+        <div class="d-flex justify-space-around my-5">
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-html.svg"></v-img>
+                </template>
+                HTML
+              </v-tooltip>
+            </v-card>
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-css.svg"></v-img>
+                </template>
+                CSS
+              </v-tooltip>
+            </v-card>
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-js.svg"></v-img>
+                </template>
+                JavaScript
+              </v-tooltip>
+            </v-card>
+          </div>
+          <div class="d-flex justify-space-around my-5">
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vue.svg"></v-img>
+                </template>
+                Vue JS
+              </v-tooltip>
+            </v-card>
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/logo.svg"></v-img>
+                </template>
+                Vuetify
+              </v-tooltip>
+            </v-card>
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vue-router.png"></v-img>
+                </template>
+                Vue Router
+              </v-tooltip>
+            </v-card>
+            <v-card color="white">
+              <v-tooltip color="accent" bottom>
+                <template v-slot:activator=" { on }">
+                  <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vuex.png"></v-img>
+                </template>
+                Vuex
+              </v-tooltip>
+            </v-card>
+          </div>
+        </v-sheet>
       </v-col>
     </v-row>
-      <v-row align="center">
-        <v-col :cols="mobileBreakpoint ? 12 : 6">
-          <v-img src="@/assets/graphics/prototyping-process-bro.svg" max-width="80%" eager ></v-img>
-        </v-col>
-        <v-col :cols="mobileBreakpoint ? 12 : 6">
-          <v-sheet class="pa-1" elevation="3" rounded="xl">
-          <v-card-subtitle class="display-1">
-            Frontend
-          </v-card-subtitle>
-          <v-card-text>
-            <p>
-              El frontend representa la interfaz que maneja la interacción del cliente o usuario. La base de un proyecto a nivel de frontend puede
-              resumirse a estructura, estilo y funcionalidad, por lo que es fundamental manejar de forma correcta la semántica con <strong>HTML</strong>, el
-              diseño con <strong>CSS</strong> y la lógica a través de <strong>JavaScript</strong>.
-            </p>
-            <p>
-              El frontend es comúnmente manejado con frameworks y librerías ya que estos proponen estructuras y herramientas
-              orientadas a potenciar la eficiencia y escalabilidad. <strong>Vue JS</strong> es el framework de JavaScript que domino, con este construí
-              <router-link to="projects">Mantra</router-link>. Me he involucrado y enamorado desde entonces con su ecosistema. En combinación con <strong>Vue
-                Router</strong> para el enrutamiento, <strong>Vuex</strong> para manejar el estado y <strong>Vuetify</strong> para el diseño, he construido interfaces óptimas y atractivas.
-            </p>
-          </v-card-text>
-          <div class="d-flex justify-space-around my-5">
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-html.svg"></v-img>
-                  </template>
-                  HTML
-                </v-tooltip>
-              </v-card>
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-css.svg"></v-img>
-                  </template>
-                  CSS
-                </v-tooltip>
-              </v-card>
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-js.svg"></v-img>
-                  </template>
-                  JavaScript
-                </v-tooltip>
-              </v-card>
-            </div>
-            <div class="d-flex justify-space-around my-5">
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vue.svg"></v-img>
-                  </template>
-                  Vue JS
-                </v-tooltip>
-              </v-card>
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/logo.svg"></v-img>
-                  </template>
-                  Vuetify
-                </v-tooltip>
-              </v-card>
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vue-router.png"></v-img>
-                  </template>
-                  Vue Router
-                </v-tooltip>
-              </v-card>
-              <v-card color="white">
-                <v-tooltip color="accent" bottom>
-                  <template v-slot:activator=" { on }">
-                    <v-img width="40" contain height="40" v-on="on" src="@/assets/graphics/logo-vuex.png"></v-img>
-                  </template>
-                  Vuex
-                </v-tooltip>
-              </v-card>
-            </div>
-          </v-sheet>
-        </v-col>
-      </v-row>
     <v-row align="center">
       <v-col :cols="mobileBreakpoint ? 12 : 6">
         <v-sheet class="pa-1" elevation="3" rounded="xl">
@@ -208,7 +196,9 @@
 </template>
 
 <script>
+import SectionCard from '@/components/SectionCard.vue'
 export default {
+  components: { SectionCard },
   computed: {
     mobileBreakpoint () {
       return this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.sm

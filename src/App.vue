@@ -41,7 +41,11 @@
     </v-app-bar>
     
     <v-main class="blob">
-      <transition>
+      <transition
+        enter-active-class="animate__animated animate__fadeInLeft"
+        leave-active-class="aimate__animated animate__fadeOutRight"
+        mode="out-in"
+      >
         <router-view />
       </transition>
     </v-main>
