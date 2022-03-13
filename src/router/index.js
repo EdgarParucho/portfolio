@@ -10,22 +10,47 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      enterClass: 'animate__animated animate__fadeInLeft',
+      leaveClass: 'aimate__animated animate__fadeOutRight',
+    }
   },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
+    meta: {
+      enterClass: 'animate__animated animate__fadeInUp',
+      leaveClass: 'aimate__animated animate__fadeOutRight',
+      title: 'Más sobre mí',
+      subtitle: 'Lo básico a nivel personal',
+      icon: 'mdi-meditation'
+    },
   },
   {
     path: '/projects',
     name: 'Projects',
-    component: Projects
+    component: Projects,
+    meta: {
+      enterClass: 'animate__animated animate__fadeInLeft',
+      leaveClass: 'aimate__animated animate__fadeOutRight',
+      title: 'Mi trabajo',
+      subtitle: 'Conoce mis proyectos y experiencia',
+      icon: 'mdi-crane'
+    },
   },
   {
     path: '/background',
     name: 'Background',
-    component: Background
+    component: Background,
+    meta: {
+      enterClass: 'animate__animated animate__fadeInLeft',
+      leaveClass: 'aimate__animated animate__fadeOutRight',
+      title: 'Mis habilidades',
+      subtitle: 'Stack de desarrollo y herramientas',
+      icon: 'mdi-book-multiple'
+    },
   }
 ]
 
