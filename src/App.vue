@@ -13,7 +13,7 @@
         <span>Acerca de</span>
         <v-icon>mdi-meditation</v-icon>
       </v-btn>
-      <v-btn to="/background" icon>
+      <v-btn to="/stack" icon>
         <span>Stack</span>
         <v-icon>mdi-book-multiple</v-icon>
       </v-btn>
@@ -34,7 +34,7 @@
         <v-icon left>mdi-meditation</v-icon>
         Acerca de
       </v-btn>
-      <v-btn class="mx-1" to="/background" color="primary" text rounded>
+      <v-btn class="mx-1" to="/stack" color="primary" text rounded>
         <v-icon left>mdi-book-multiple</v-icon>
         Stack
       </v-btn>
