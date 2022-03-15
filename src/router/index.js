@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
-import Background from '../views/Background.vue'
+import Stack from '../views/Stack.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -41,9 +41,9 @@ const routes = [
     },
   },
   {
-    path: '/background',
-    name: 'Background',
-    component: Background,
+    path: '/stack',
+    name: 'Stack',
+    component: Stack,
     meta: {
       enterClass: 'animate__animated animate__fadeInLeft',
       leaveClass: 'aimate__animated animate__fadeOutRight',
