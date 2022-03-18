@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <section-card :section="$router.history.current" />
-    <v-row align="center" v-for="aspect, i of aspects" :key="i">
+    <v-row v-for="aspect, i of aspects" :key="i" align="center">
       <v-col :cols="mobileBreakpoint ? 12: 6" :order="i%2">
         <v-img :src="aspect.img" max-width="80%" eager></v-img>
       </v-col>

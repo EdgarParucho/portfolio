@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Stack from '../views/Stack.vue'
+import Mantra from '../views/Mantra.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -12,20 +14,18 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      enterClass: 'animate__animated animate__fadeInLeft',
-      leaveClass: 'aimate__animated animate__fadeOutRight',
-    }
+      section: false
+    },
   },
   {
     path: '/about',
     name: 'About',
     component: About,
     meta: {
-      enterClass: 'animate__animated animate__fadeInUp',
-      leaveClass: 'aimate__animated animate__fadeOutRight',
       title: 'Más sobre mí',
       subtitle: 'Lo básico a nivel personal',
-      icon: 'mdi-meditation'
+      icon: 'mdi-meditation',
+      section: true
     },
   },
   {
@@ -33,11 +33,10 @@ const routes = [
     name: 'Projects',
     component: Projects,
     meta: {
-      enterClass: 'animate__animated animate__fadeInLeft',
-      leaveClass: 'aimate__animated animate__fadeOutRight',
       title: 'Mi trabajo',
       subtitle: 'Conoce mis proyectos y experiencia',
-      icon: 'mdi-crane'
+      icon: 'mdi-crane',
+      section: true
     },
   },
   {
@@ -45,11 +44,19 @@ const routes = [
     name: 'Stack',
     component: Stack,
     meta: {
-      enterClass: 'animate__animated animate__fadeInLeft',
-      leaveClass: 'aimate__animated animate__fadeOutRight',
       title: 'Mis habilidades',
       subtitle: 'Stack de desarrollo y herramientas',
-      icon: 'mdi-book-multiple'
+      icon: 'mdi-book-multiple',
+      section: true
+    },
+  },
+  
+  {
+    path: '/mantra',
+    name: 'Mantra',
+    component: Mantra,
+    meta: {
+      section: false
     },
   }
 ]
