@@ -4,9 +4,9 @@
   subtitle: 'El proyecto que cambió mi ruta',
   description: `
     Mantra es el primer proyecto de desarrollo web que llevé a producción,
-    puedes ver sus características generales en la sección de proyectos.
-    Acá pretendo darte un recorrido en mis zapatos a su concepción con el objetivo
-    de mostrarte como un montón de problemas marcaron mi senda al desarrollo web.`,
+    sus características las detallo en la sección de proyectos.
+    Acá pretendo darte un recorrido por su concepción con el objetivo
+    de mostrarte una parte importante de mi identidad.`,
   path: '/mantra',
   stages: [
     {
@@ -16,19 +16,16 @@
         {
           subtitle: '¿Que es Microfilms Center?',
           text: `
-            Es una empresa Venezolana con casi 20 años de experiencia y presencia a nivel nacional.
-            Su principal servicio es el mantenimiento correctivo y preventivo de periféricos de uso
-            común en el sector bancario como: impresoras financieras, lectoras de cheques, contadoras,
-            de billetes, entre otros.
+            Una empresa Venezolana con alrededor de 20 años de experiencia ofreciendo soluciones orientadas principalmente al sector
+            financiero y con un alcance a nivel nacional.
           `
         },
         {
           subtitle: 'Mi papel en la compañía',
           text: `
-            Al ingresar a la empresa no había desarrollado alguna habilidad técnica especial o
-            destacable, lo que si tenía era muchas ganas de probar mi potencial, de aprender,
-            disciplina y enfoque. Inicié como analista de Help Desk y poco antes de cumplir
-            un año, ocupé el puesto de Supervisor de Help Desk.
+            Inicié como analista de Help Desk. Poco antes de cumplir un año de antigüedad ocupé el puesto de Supervisor de Help Desk,
+            encargándome de las principales actividades operacionales. Al ingresar a la empresa no había desarrollado alguna habilidad
+            técnica especial o destacable, lo que si tenía era muchas ganas de probar mi potencial, de aprender y mis habilidades blandas.
           `
         }
       ],
@@ -39,20 +36,19 @@
       img: require('@/assets/graphics/research-paper-bro.svg'),
       subjects: [
         {
-          subtitle: 'El problema con los materiales de oficina',
+          subtitle: 'El problema',
           text: `
-            Los principales recursos para manejar la información de operaciones eran materiales
-            de oficina (lápices, bolígrafos, mucho papel, blocks y notas). Los problemas con esto
-            eran el elevado consumo de materiales y la seguridad de la información con todo lo que
-            implica el riesgo de pérdida, disponibilidad, falta de respaldo e inconvenientes para transmitirla.
+            Me considero innovador y acá terminaría potenciando esto. Desde el inicio noté oportunidades de mejora importantes en el
+            sistema de gestión. Era rutina manejar datos con materiales de oficina. Se usaban hojas de cálculo con cientos de filas como
+            controles internos e informes para clientes. Había una aplicación local usada como base de datos y no mucho más.
           `
         },
         {
-          subtitle: 'Los recursos digitales',
+          subtitle: 'La oportunidad',
           text: `
-            En cuanto a las herramientas digitales, Excel predominaba para transcribir y organizar
-            los datos además de elaborar informes internos y para cada cliente. Adicionalmente, se
-            contaba con una aplicación local que funcionaba para el registro y como base de datos pero no mucho más.
+            Así que existía un consumo elevado de lápices, bolígrafos, hojas, blocks y papel de notas que a su vez traía riesgos de seguridad
+            de la información con todo lo que implica. Aún así, nadie había tomado la iniciativa para abordar esto. Es comprensible asumir la
+            típica postura de "si funciona, no lo toque", para mí el gran problema lo veía como una gran oportunidad.
           `
         }
       ],
@@ -65,18 +61,17 @@
         {
           subtitle: 'El poder subestimado de Excel',
           text: `
-            En mis ratos libres indagaba sobre Excel, aprendiendo sobre funciones, fórmulas y macros.
-            No tardé en adquirir habilidades importantes para crear propuestas según los problemas que observé.
+            Me encanta aprender. Comencé a aprender sobre funciones, fórmulas y macros en Excel. Con determinación y paciencia, pasé de
+            novato a avanzado en los primeros meses. Con nuevas habilidades, pude crear propuestas para los problemas que observé. Poco
+            sabía que estaba programando en cierta forma y además desarrollando mi lógica mientras escribía fórmulas complejas.
           `
         },
         {
           subtitle: 'Primeros logros',
           text: `
-            En poco tiempo había logrado cambios importantes en nuestro sistema de gestión.
-            Los archivos ahora eran digitales y compartidos a través de una red local, además contaban con
-            tablas y gráficas que ofrecían información relevante tanto para tomadores de decisiones como clientes.
-            Correos que se enviaban personalizando uno por uno, ahora se generaban automaticamente
-            en libros de Excel con Macros. El consumo de los materiales de oficina se redujo casi a cero.
+            Orienté al objetivo cada libro creado: solucionar problemas. Digitalizamos procesos y documentos compartidos por red local,
+            ofreciamos tablas y gráficas facilitando información relevante para superiores y clientes. Correos antes personalizados uno por
+            uno, ahora se generaban automaticamente en libros con Macros. El consumo de los materiales de oficina se redujo casi a cero.
           `
         }
       ],
@@ -89,27 +84,21 @@
         {
           subtitle: 'La oportunidad',
           text: `
-            La automatización de procesos y mejoras en el sistema me permitieron conseguir un nuevo puesto cuando
-            se presentó la oportunidad a 10 meses de mi ingreso. Convertirrme en Supervisor de Help Desk fue de mis
-            mayores retos. Había conseguido diferentes roles en otras experiencias laborales, pero no se comparaban
-            a mis nuevas responsabilidades. En promedio, estaba a cargo de 5 analistas, 2 jefes regionales y 30
-            técnicos de campo. La gran mayoría con más antigüedad y experiencia que yo. Respondía a la Coordinación
-            de Operaciones y a la junta directiva sobre el estado del servicio a nivel nacional por cada cliente.
+            Este contexto me permitió conseguir un nuevo puesto cuando se presentó la oportunidad a 10 meses de mi ingreso. Convertirme
+            en Supervisor de Help Desk fue de mis mayores retos. En promedio, estaba a cargo de 5 analistas, 2 jefes regionales y 30 técnicos
+            de campo. Respondía a la Coordinación de Operaciones y a la junta directiva sobre el servicio por cada cliente.
           `
         },
         {
           subtitle: 'Sobre la transición',
           text: `
-            Tardé en cambiar a mi nuevo rol. De hecho, mantuve funciones que quizás debí delegar o reducir,
-            entre ellas, desarrollar desenfrenadamente. Eventualmente todo fluyó y logré con mi equipo
-            materializar resultados positivos tanto a nivel de indicadores como de gestión interna.
-            En cuanto al desarrollo, pude transmitir parte de mis conocimientos y así apoyarme a crear
-            nuevas y mejores soluciones. Los archivos eran cada vez útiles para más tareas hasta que el
-            sistema demandaba un cambio a otro nivel: la tecnología web.
+            Con mi equipo logré materializar resultados positivos tanto en indicadores como en gestión interna. En cuanto al desarrollo, pude
+            transmitir parte de mis conocimientos y así apoyarme a crear nuevas y mejores soluciones. Los archivos eran cada vez útiles para
+            más tareas pero su crecimiento en cantidad y dependencia demandaba un cambio a otro nivel: la tecnología web.
           `
         }
       ],
-      quote: '“Dame seis horas para derribar un arbol y dedicaré las primeras cuatro a afilar el hacha” - Abraham Lincoln'
+      quote: '“El logro no requiere una habilidad extraordinaria. El logro proviene de habilidades ordinarias aplicadas con extraordinaria persistencia” - Ralph Marston'
     },
     {
       title: 'La pandemia y otra oportunidad',
@@ -118,22 +107,17 @@
         {
           subtitle: 'Confinamiento',
           text: `
-            Hablando estrictamente de giro profesional, no puedo imaginar otra situación que haya podido favorecer
-            más a mi aprendizaje y futuro cambio de área. Desde el día en que fue declarada la pandemia enfoqué mi
-            tiempo y energía en aprender sobre desarrollo web, cometí errores en la ruta y el contenido de lo que aprendía.
-            El agotamiento me alcanzaba en la laptop, me despertaba un par de horas más tarde y continuaba.
-            Sostuve esa rutina por varios meses, huyendo a la idea de volver en cualquier momento a la oficina
-            sin haber aprovechado el tiempo.
+            Desde la declaración de la pandemia, enfoqué mi tiempo y energía en aprender sobre desarrollo web. El agotamiento me
+            alcanzaba en la laptop, despertaba un par de horas más tarde y continuaba. Sostuve esa rutina por varios meses, huyendo a la
+            idea de volver en cualquier momento a la oficina sin haber aprovechado el tiempo junto a mi nueva pasión.
           `
         },
         {
           subtitle: 'El cambio de todo',
           text: `
-            Durante mi aprendizaje tuve muchos momentos que me dejaron claro que ser desarrollador era mi futuro,
-            mi camino a la felicidad, era a lo que se refería Steve Jobs en su discurso de Stanford sobre hacer lo que amas.
-            Cosas como conectar back-end con front-end o conectar a una base de datos era para mi motivo para saltar de a
-            las 3 a.m. en mi sala (en el día podía gritar). Convertía un tutorial de lista de tareas en un sistema de gestión
-            de reportes. No hubo papel suficiente para las ideas. Construía y destruía mis proyectos experimentando.
+            Durante mi aprendizaje tuve muchos momentos que me dejaron claro que ser desarrollador era mi camino a la felicidad, era a lo
+            que se refería Steve Jobs en su discurso de Stanford sobre hacer lo que amas. Me equivocaba, entendía, experimentaba, me frustraba
+            pero amé cada fase de esa transición. Había decidido a que dedicarme y nada cambiaría mi decisión.
           `
         }
       ],
@@ -146,28 +130,22 @@
         {
           subtitle: 'Imparable',
           text: `
-            Eventualmente se reanudaron de forma progresiva las actividades presenciales, eso no me detuvo, había cambiado.
-            Camino a la oficina dibujaba wireframes, escribía ideas, solucionaba problemas con diagramas de flujo.
-            Al regresar a casa continuaba escribiendo código y experimentando. Para entonces (agosto de 2020),
-            ya tenía una aplicación lo suficientemente funcional para ser implementada y, tras ser presentada,
-            se acordó hacerlo para iniciar el 2021.
+            Había cambiado. Al reanudar actividades presenciales, mi forma de ver al mundo era distinta.
+            Camino a la oficina dibujaba wireframes, diagramas de flujo y escribía ideas. Al regresar a casa volvía al código. Para entonces
+            ya tenía una aplicación lo suficientemente funcional para ser implementada y, tras ser presentada, se acordó hacerlo para iniciar el 2021.
           `
         },
         {
-          subtitle: 'Fork',
+          subtitle: 'Un nuevo camino',
           text: `
-            El sistema fue un éxito en producción, aunque sus funciones inicialmente eran limitadas, fue suficiente
-            para sustituir el software anterior. Lo mejor llegó con una segunda versión, la cual sumó alrededor de
-            10 interfaces que permitían a los usuarios integrar procesos e información manejada en nuestros desarrollos
-            de Excel y muchas novedades que se hicieron posible gracias al tipo de tecnología. En este punto decidí
-            comunicar anticipadamente a mis superiores la decisión que había tomado de retirarme de la compañía para
-            emprender un nuevo proyecto en busca de una oportunidad como desarrollador. Al retirarme había entregado
-            dos versiones de Mantra y presenté una tercera un par de meses después para añadir funciones y asociar el
-            diseño a su imagen corporativa.
+            Mantra fue un éxito en producción, En resumen y por palabras de sus usuarios, era la solución que siempre se estuvo buscando.
+            Con un par de meses de anticipación, comuniqué la decisión de retirarme tras cumplir mis objetivos con el proyecto. Era momento
+            de dedicarme a mis objetivos de capacitación y oportunidades ahora como desarrollador. Entregué 3 versiones de Mantra y un
+            departamento que mantuvo un nivel constante de mejora para cerrar una relación de 3 años y 7 meses de mutuo crecimiento.
           `
         }
       ],
-      quote: '“La única forma de hacer un gran trabajo es hacer lo que amas” - Steve Jobs'
+      quote: '“Ten el coraje de seguir a tu corazón e intuición. Ellos de alguna forma ya saben en lo que realmente quieres convertirte. Todo lo demás es secundario” - Steve Jobs'
     }  
   ]
 }
