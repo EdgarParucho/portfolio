@@ -31,14 +31,15 @@ import ArticleCard from '@/components/ArticleCard.vue'
     data: () => ({
       articles: [
         {
-          cover: require('@/assets/img/article_mantra.jpg'),
-          title: { main: 'Lo que hice en Venezuela para', keyword: 'Microfilms Center' },
-          description: 'El proyecto que cambió mi ruta'
+          cover: require('@/assets/img/article_alliance.jpg'),
+          title: { main: 'Lo que logré en Venezuela para', keyword: 'Microfilms Center' },
+          description: 'El proyecto que cambió mi ruta',
+          path: '/mantra'
         },
         {
-          cover: require('@/assets/img/article_alliance.jpg'),
-          title: { main: '¿Que busco en una', keyword: 'alianza?' },
-          description: 'Lo que más valoro en una relación laboral'
+          cover: require('@/assets/img/article_knowledge.jpg'),
+          title: { main: 'La fuente de mis', keyword: 'conocimientos' },
+          description: 'Como y de quienes aprendo'
         },
         {
           cover: require('@/assets/img/article_2022.jpg'),
@@ -52,7 +53,7 @@ import ArticleCard from '@/components/ArticleCard.vue'
         return this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.sm
       },
       sections () {
-        return this.$router.options.routes.filter(section => section.path !== '/')
+        return this.$router.options.routes.filter(section => section.meta.section === true)
       }
     }
   }

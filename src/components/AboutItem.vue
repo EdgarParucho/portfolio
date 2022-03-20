@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card class="pa-2" max-width="600">
+    <v-sheet class="pa-2" elevation="3" rounded="xl">
       <div class="justify-space-between d-flex">
         <v-avatar class="mx-1" color="primary" size="70">
           <v-icon x-large>{{ aspect.icon }}</v-icon>
@@ -14,7 +14,7 @@
           {{ paragraph }}
         </p>
       </v-card-text>
-    </v-card>
+    </v-sheet>
   </v-container>
 </template>
 

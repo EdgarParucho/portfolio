@@ -22,7 +22,7 @@
     <v-app-bar v-else class="px-2" app elevation="3" dense>
       <span class="app-title primary--text">Edgar Parucho</span>
       <v-spacer></v-spacer>
-      <v-btn class="mx-1" to="/" color="primary" text outlined rounded>
+      <v-btn class="mx-1" to="/" color="primary" outlined rounded>
         <v-icon left>mdi-home</v-icon>
         Inicio
       </v-btn>
@@ -43,7 +43,7 @@
     <v-main class="blob">
       <transition
         enter-active-class="animate__animated animate__fadeInLeft"
-        leave-active-class="aimate__animated animate__fadeOutRight"
+        leave-active-class="animate__animated animate__fadeOutRight"
         mode="out-in"
       >
         <router-view />
@@ -76,10 +76,11 @@ export default {
   }
   .blob {
     background-image: url('./assets/graphics/blob-haikei.svg');
-    background-size: contain;
+    background-size: 100vw;
   }
   .blob-scene {
     background-image: url('./assets/graphics/blob-scene-haikei.svg');
+    background-size: 100vw;
     background-size: cover;
   }
   .v-enter-active,

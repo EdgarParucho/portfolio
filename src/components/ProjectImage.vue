@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-card>
-      <v-img class="grey lighten-2" :src="image.src" aspect-ratio="1">
+    <v-card class="pa-2">
+      <v-img class="grey lighten-2" :src="image.src" :aspect-ratio="image.ratio">
         <template v-slot:placeholder>
           <v-row class="fill-height ma-0" align="center" justify="center">
             <v-progress-circular indeterminate color="grey lighten-5" />
