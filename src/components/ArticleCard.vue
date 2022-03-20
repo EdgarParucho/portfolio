@@ -12,7 +12,12 @@
         {{ article.description }}
       </v-card-text>
       <v-card-actions>
-        <v-btn color="secondary" block :to="article.path">Leer</v-btn>
+        <v-btn v-if="$router.history.current.path === '/'" :to="article.path" color="secondary" block>
+          Leer
+        </v-btn>
+        <v-btn v-else to="/" color="error" block text>
+          Volver al inicio
+        </v-btn>
       </v-card-actions>
     </v-card>
   </v-container>

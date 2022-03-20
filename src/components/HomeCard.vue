@@ -3,7 +3,7 @@
     <v-card class="pa-2 blob-scene" tile elevation="4" max-width="700">
       <div class="d-flex justify-end">
         <v-avatar size="185" color="#eee">
-          <v-img class="mt-2" height="290" contain src="@/assets/img/avatar2.png"></v-img>
+          <v-img class="mt-2" height="290" contain src="@/assets/img/avatar.png"></v-img>
         </v-avatar>
       </div>
       <v-card-title>
