@@ -22,7 +22,7 @@
     <v-app-bar v-else class="px-2" app elevation="3" dense>
       <span class="app-title primary--text">Edgar Parucho</span>
       <v-spacer></v-spacer>
-      <v-btn class="mx-1" to="/" color="primary" text outlined rounded>
+      <v-btn class="mx-1" to="/" color="primary" outlined rounded>
         <v-icon left>mdi-home</v-icon>
         Inicio
       </v-btn>

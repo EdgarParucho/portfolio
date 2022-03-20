@@ -1,12 +1,8 @@
   export default {
   cover: require('@/assets/img/article_alliance.jpg'),
-  title: { main: 'Lo que hice para Microfilms Center en', keyword: 'Venezuela' },
+  title: { main: 'Lo que hice para Microfilms en', keyword: 'Venezuela' },
   subtitle: 'El proyecto que cambió mi ruta',
-  description: `
-    Mantra es el primer proyecto de desarrollo web que llevé a producción,
-    sus características las detallo en la sección de proyectos.
-    Acá pretendo darte un recorrido por su concepción con el objetivo
-    de mostrarte una parte importante de mi identidad.`,
+  description: 'Acá pretendo darte un recorrido por la concepción de Mantra con el objetivo de mostrarte una parte importante de mi identidad.',
   path: '/mantra',
   stages: [
     {
@@ -23,36 +19,33 @@
         {
           subtitle: 'Mi papel en la compañía',
           text: `
-            Inicié como analista de Help Desk. Poco antes de cumplir un año de antigüedad ocupé el puesto de Supervisor de Help Desk,
-            encargándome de las principales actividades operacionales. Al ingresar a la empresa no había desarrollado alguna habilidad
-            técnica especial o destacable, lo que si tenía era muchas ganas de probar mi potencial, de aprender y mis habilidades blandas.
+            Inicié como analista de Help Desk. Ingresé sin conocimientos técnicos destacables, pero con habilidades blandas, ganas de
+            probar mi potencial y de aprender.
           `
         }
       ],
-      quote: '“No soy ni astuto ni dotado. Solo soy muy, muy curioso” - Albert Einstein'
+      quote: { cite: '“No soy ni astuto ni dotado. Solo soy muy, muy curioso”', author: 'Albert Einstein' }
     },
     {
-      title: 'Antes de Mantra',
+      title: 'Problemas y Oportunidades',
       img: require('@/assets/graphics/research-paper-bro.svg'),
       subjects: [
         {
-          subtitle: 'El problema',
+          subtitle: 'Innovador habitual',
           text: `
-            Me considero innovador y acá terminaría potenciando esto. Desde el inicio noté oportunidades de mejora importantes en el
-            sistema de gestión. Era rutina manejar datos con materiales de oficina. Se usaban hojas de cálculo con cientos de filas como
-            controles internos e informes para clientes. Había una aplicación local usada como base de datos y no mucho más.
+            Desde el inicio noté oportunidades de mejora en el sistema de gestión. La rutina era manejar datos con materiales
+            de oficina, hojas de cálculo de filas infinitas y una aplicación local usada como base de datos, pero no mucho más.
           `
         },
         {
-          subtitle: 'La oportunidad',
+          subtitle: 'Camino libre',
           text: `
-            Así que existía un consumo elevado de lápices, bolígrafos, hojas, blocks y papel de notas que a su vez traía riesgos de seguridad
-            de la información con todo lo que implica. Aún así, nadie había tomado la iniciativa para abordar esto. Es comprensible asumir la
-            típica postura de "si funciona, no lo toque", para mí el gran problema lo veía como una gran oportunidad.
+            Algunos piensan: "Si funciona, no lo toque", para mí, un problema es una oportunidad. Junto al consumo elevado de lápices,
+            bolígrafos, hojas, blocs y demás, venían problemas de seguridad de la información. Pero no habían iniciativas para abordar esto.
           `
         }
       ],
-      quote: '“Si hubiera preguntado a la gente que quería, hubieran dicho que caballos más rápidos” - Henry Ford'
+      quote: { cite: '“Si hubiera preguntado a la gente que quería, hubieran dicho que caballos más rápidos”', author: 'Henry Ford' }
     },
     {
       title: 'Creando soluciones',
@@ -61,21 +54,19 @@
         {
           subtitle: 'El poder subestimado de Excel',
           text: `
-            Me encanta aprender. Comencé a aprender sobre funciones, fórmulas y macros en Excel. Con determinación y paciencia, pasé de
-            novato a avanzado en los primeros meses. Con nuevas habilidades, pude crear propuestas para los problemas que observé. Poco
-            sabía que estaba programando en cierta forma y además desarrollando mi lógica mientras escribía fórmulas complejas.
+            Me encanta aprender. Investigué sobre funciones, fórmulas y macros en Excel, desarrollando mi lógica inconscientemente. Pasé
+            de novato a avanzado en los primeros meses, permitiéndome crear propuestas para esos problemas.
           `
         },
         {
           subtitle: 'Primeros logros',
           text: `
-            Orienté al objetivo cada libro creado: solucionar problemas. Digitalizamos procesos y documentos compartidos por red local,
-            ofreciamos tablas y gráficas facilitando información relevante para superiores y clientes. Correos antes personalizados uno por
-            uno, ahora se generaban automaticamente en libros con Macros. El consumo de los materiales de oficina se redujo casi a cero.
+            Orientado al objetivo, digitalizamos procesos enteros. Ofrecimos libros con tablas y gráficas de valor para superiores y clientes.
+            Tareas con correos diarios se automatizaron con Macros. El consumo de materiales de oficina bajó casi a cero.
           `
         }
       ],
-      quote: '“Dame seis horas para derribar un arbol y dedicaré las primeras cuatro a afilar el hacha” - Abraham Lincoln'
+      quote: { cite: '“Dame seis horas para derribar un arbol y dedicaré las primeras cuatro a afilar el hacha”', author: 'Abraham Lincoln'}
     },
     {
       title: 'El resultado del cambio',
@@ -84,44 +75,40 @@
         {
           subtitle: 'La oportunidad',
           text: `
-            Este contexto me permitió conseguir un nuevo puesto cuando se presentó la oportunidad a 10 meses de mi ingreso. Convertirme
-            en Supervisor de Help Desk fue de mis mayores retos. En promedio, estaba a cargo de 5 analistas, 2 jefes regionales y 30 técnicos
-            de campo. Respondía a la Coordinación de Operaciones y a la junta directiva sobre el servicio por cada cliente.
+            A los 10 meses, este contexto me llevó a uno de mis mayores retos, ser Supervisor de Help Desk. Estaba a cargo de 5 analistas, 2
+            jefes regionales y 30 técnicos. Respondía a la Coordinación de Operaciones, a la junta directiva y a cada cliente.
           `
         },
         {
           subtitle: 'Sobre la transición',
           text: `
-            Con mi equipo logré materializar resultados positivos tanto en indicadores como en gestión interna. En cuanto al desarrollo, pude
-            transmitir parte de mis conocimientos y así apoyarme a crear nuevas y mejores soluciones. Los archivos eran cada vez útiles para
-            más tareas pero su crecimiento en cantidad y dependencia demandaba un cambio a otro nivel: la tecnología web.
+            Mi equipo materializó resultados positivos en indicadores y gestiones internas. Transmití parte de mis conocimientos y así
+            creamos mejores soluciones. Pero la dependencia sobre los libros de Excel demandaba un cambio a otro nivel: la tecnología web.
           `
         }
       ],
-      quote: '“El logro no requiere una habilidad extraordinaria. El logro proviene de habilidades ordinarias aplicadas con extraordinaria persistencia” - Ralph Marston'
+      quote: { cite: '“El logro no requiere una habilidad extraordinaria. El logro proviene de habilidades ordinarias aplicadas con extraordinaria persistencia”', author: 'Ralph Marston' }
     },
     {
-      title: 'La pandemia y otra oportunidad',
+      title: 'La pandemia',
       img: require('@/assets/graphics/blogging-bro.svg'),
       subjects: [
         {
           subtitle: 'Confinamiento',
           text: `
-            Desde la declaración de la pandemia, enfoqué mi tiempo y energía en aprender sobre desarrollo web. El agotamiento me
-            alcanzaba en la laptop, despertaba un par de horas más tarde y continuaba. Sostuve esa rutina por varios meses, huyendo a la
-            idea de volver en cualquier momento a la oficina sin haber aprovechado el tiempo junto a mi nueva pasión.
+            Me enamoré inmediatamente del desarrollo web. Desde la declaración de pandemia, enfoqué días y noches enteras en aprender y
+            lo mantuve hasta perder la noción del tiempo. Huía a la idea de haber desperdiciado el tiempo junto a mi nueva pasión.
           `
         },
         {
           subtitle: 'El cambio de todo',
           text: `
-            Durante mi aprendizaje tuve muchos momentos que me dejaron claro que ser desarrollador era mi camino a la felicidad, era a lo
-            que se refería Steve Jobs en su discurso de Stanford sobre hacer lo que amas. Me equivocaba, entendía, experimentaba, me frustraba
-            pero amé cada fase de esa transición. Había decidido a que dedicarme y nada cambiaría mi decisión.
+            Más que entender, sentí a que se refería Steve Jobs con su discurso de Stanford. Conecté con el rol de desarrollador a través de
+            errores, aprendizaje, experimentos y frustración. Aquí empecé a concebir un nuevo proyecto: Mantra (en ese momento, Edea).
           `
         }
       ],
-      quote: '“La única forma de hacer un gran trabajo es hacer lo que amas” - Steve Jobs'
+      quote: { cite: '“La única forma de estar realmente satisfecho es hacer lo que consideres como un gran trabajo y la única forma de hacer un gran trabajo es hacer lo que amas”', author: 'Steve Jobs' }
     },
     {
       title: 'Escalando',
@@ -130,22 +117,33 @@
         {
           subtitle: 'Imparable',
           text: `
-            Había cambiado. Al reanudar actividades presenciales, mi forma de ver al mundo era distinta.
-            Camino a la oficina dibujaba wireframes, diagramas de flujo y escribía ideas. Al regresar a casa volvía al código. Para entonces
-            ya tenía una aplicación lo suficientemente funcional para ser implementada y, tras ser presentada, se acordó hacerlo para iniciar el 2021.
+            Había cambiado. Retomar actividad presencial lo hizo evidente, sobre todo por mi nueva y casi obsesiva percepción del tiempo.
+            Mantra cumplía funciones muy básicas en su versión 1 tras 5 meses. Tras presentarla, se fijó usarla a partir del nuevo año 2021.
+            Fue todo un éxito.
           `
         },
         {
           subtitle: 'Un nuevo camino',
           text: `
-            Mantra fue un éxito en producción, En resumen y por palabras de sus usuarios, era la solución que siempre se estuvo buscando.
-            Con un par de meses de anticipación, comuniqué la decisión de retirarme tras cumplir mis objetivos con el proyecto. Era momento
-            de dedicarme a mis objetivos de capacitación y oportunidades ahora como desarrollador. Entregué 3 versiones de Mantra y un
-            departamento que mantuvo un nivel constante de mejora para cerrar una relación de 3 años y 7 meses de mutuo crecimiento.
+            Con un par de meses de anticipación, anuncié mi retiro. Era momento de dedicarme a mis objetivos de capacitación y oportunidades como desarrollador.
+            Entregué 3 versiones de Mantra y un departamento que mantuvo un nivel constante de mejora para cerrar una relación de 3 años y 7 meses de mutuo crecimiento.
+          `
+        },
+        {
+          subtitle: '¿Qué significó este proyecto?',
+          text: `
+            En palabras de sus usuarios, la solución que siempre se estuvo buscando. Fue el resultado de mi experiencia y la de mi equipo
+            materializada en una aplicación web, significó para mi un cambio personal y profesional, significó plasmar las ideas acumuladas
+            como un juego de engranajes, significó ensamblar mis habilidades, mi potencial y capacidad de aprender para implementar un
+            producto de calidad sin descuidar mis funciones originales, este proyecto fue para mi lo que quise hacer para mi equipo: un
+            Mantra.
           `
         }
       ],
-      quote: '“Ten el coraje de seguir a tu corazón e intuición. Ellos de alguna forma ya saben en lo que realmente quieres convertirte. Todo lo demás es secundario” - Steve Jobs'
+      quote: {
+        cite: '“Ten el coraje de seguir a tu corazón e intuición. Ellos de alguna forma ya saben en lo que realmente quieres convertirte. Todo lo demás es secundario”',
+        author: 'Steve Jobs'
+      }
     }  
   ]
 }
