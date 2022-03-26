@@ -5,12 +5,9 @@
       <v-card-title class="subtitle-1 font-weight-bold">
         {{ article.title.main }}&nbsp;<span class="secondary--text">{{ article.title.keyword }}</span>
       </v-card-title>
-      <v-card-subtitle class="subtitle-1">
+      <v-card-subtitle class="subtitle-1 text--primary">
         {{ article.subtitle }}
       </v-card-subtitle>
-      <v-card-text>
-        {{ article.description }}
-      </v-card-text>
       <v-card-actions>
         <v-btn v-if="$router.history.current.path === '/'" :to="article.path" color="secondary" block>
           Leer
