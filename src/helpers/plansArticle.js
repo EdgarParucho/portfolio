@@ -1,8 +1,8 @@
   export default {
-  cover: require('@/assets/img/article_alliance.jpg'),
-  title: { main: 'Lo que hice para Microfilms en', keyword: 'Venezuela' },
-  subtitle: 'Una transición a través de un proyecto',
-  path: '/mantra',
+  cover: require('@/assets/img/article_path.jpg'),
+  title: { main: 'El tiempo como', keyword: 'recurso' },
+  subtitle: 'Una senda, muchos destinos',
+  path: '/plans',
   stages: [
     {
       title: 'Entremos en contexto',

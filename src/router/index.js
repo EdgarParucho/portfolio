@@ -5,6 +5,8 @@ import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Stack from '../views/Stack.vue'
 import Mantra from '../views/Mantra.vue'
+import Background from '../views/Background.vue'
+import Plans from '../views/Plans.vue'
 
 Vue.use(VueRouter)
 
@@ -50,14 +52,29 @@ const routes = [
       section: true
     },
   },
-  
   {
     path: '/mantra',
     name: 'Mantra',
     component: Mantra,
     meta: {
       section: false
-    },
+    }
+  },
+  {
+    path: '/background',
+    name: 'Background',
+    component: Background,
+    meta: {
+      section: false
+    }
+  },
+  {
+    path: '/plans',
+    name: 'Plans',
+    component: Plans,
+    meta: {
+      section: false
+    }
   }
 ]
 
