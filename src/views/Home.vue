@@ -13,7 +13,7 @@
         <section-card v-for="section, i of sections" :key="i" :section="section" />
       </v-col>
     </v-row>
-    <v-row>
+    <v-row justify="space-around">
       <v-col :cols="mobileBreakpoint ? 12 : 4" v-for="article, i of articles" :key="i">
         <article-card :article="article" />
       </v-col>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import articles from '@/helpers/articles.js'
 import HomeCard from '@/components/HomeCard.vue'
 import SectionCard from '@/components/SectionCard.vue'
 import ArticleCard from '@/components/ArticleCard.vue'
@@ -29,24 +30,7 @@ import ArticleCard from '@/components/ArticleCard.vue'
     name: 'Home',
     components: { HomeCard, SectionCard, ArticleCard },
     data: () => ({
-      articles: [
-        {
-          cover: require('@/assets/img/article_alliance.jpg'),
-          title: { main: 'Lo que logré en Venezuela para', keyword: 'Microfilms Center' },
-          description: 'El proyecto que cambió mi ruta',
-          path: '/mantra'
-        },
-        {
-          cover: require('@/assets/img/article_knowledge.jpg'),
-          title: { main: 'La fuente de mis', keyword: 'conocimientos' },
-          description: 'Como y de quienes aprendo'
-        },
-        {
-          cover: require('@/assets/img/article_2022.jpg'),
-          title: { main: 'Mis planes para el', keyword: '2022' },
-          description: 'Lo que me propongo para el año en curso'
-        }
-      ]
+      articles
     }),
     computed: {
       mobileBreakpoint () {
