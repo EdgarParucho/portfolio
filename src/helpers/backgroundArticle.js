@@ -1,148 +1,194 @@
-  export default {
+export default {
   cover: require('@/assets/img/article_knowledge.jpg'),
-  title: { main: 'La fuente de mis', keyword: 'conocimientos' },
-  subtitle: 'Como y de quienes aprendo',
+  title: { main: 'Fuentes de', keyword: 'aprendizaje' },
+  subtitle: 'Como obtengo conocimientos',
   path: '/background',
-  stages: [
+  cards: [
     {
-      title: 'Entremos en contexto',
-      img: require('@/assets/graphics/man-thinking-bro.svg'),
-      subjects: [
+      title: 'Cursos',
+      img: require('@/assets/graphics/certification-bro.svg'),
+      paragraphs: [
         {
-          subtitle: '¿Que es Microfilms Center?',
-          text: `
-            Una empresa Venezolana con alrededor de 20 años de experiencia ofreciendo soluciones orientadas principalmente al sector
-            financiero y con un alcance a nivel nacional.
+          subject: '',
+          body: `
+            Una de las primeras decisiones que tomé al dedicarme de lleno al desarrollo web, fue suscribirme a una plataforma eductativa.
+            Esto para mi funciona como para un atleta un gimnasio, como una base en la que, con disciplina, adquiero y refuerzo habilidades.
           `
         },
         {
-          subtitle: 'Mi papel en la compañía',
-          text: `
-            Inicié como analista de Help Desk. Ingresé sin conocimientos técnicos destacables, pero con habilidades blandas, ganas de
-            probar mi potencial y de aprender.
+          subject: '',
+          body: `
+            He completado cursos de desarrollo web y su contexto: diseño, metodologías ágiles, herramientas complementarias, etc.
+            Actualmente estoy más enfocado en profundizar y ampliar mis principales habilidades técnicas desde el núcleo.
           `
         }
       ],
-      quote: { cite: '“No soy ni astuto ni dotado. Solo soy muy, muy curioso”', author: 'Albert Einstein' }
+      imgs: [
+        {
+          name: 'Vue JS',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/3886d909-4c3a-4e5c-a004-68cc5fcdccea.png',
+          link: 'https://ed.team/@edgarparucho/curso/vue',
+          scale: 2
+        },
+        {
+          name: 'Node JS',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/3cc48fa0-8327-4561-aa04-dafc3b799909.png',
+          link: 'https://ed.team/@edgarparucho/curso/nodejs',
+          scale: 2
+        },
+        {
+          name: 'Express JS',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/ef0d92b3-74d6-4bec-bc4f-baa18dcf558e.png',
+          link: 'https://ed.team/@edgarparucho/curso/express',
+          scale: 2
+        },
+        {
+          name: 'Mongo DB',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/7f3ac3ee-a5d5-4ce0-be38-4521dc70b011.png',
+          link: 'https://ed.team/@edgarparucho/curso/mongodb',
+          scale: 2
+        },
+        {
+          name: 'Vue-Componentes',
+          path: 'https://a.storyblok.com/f/87002/1280x720/dcf7ac0339/vue-components-escuela-vue.jpg',
+          link: 'https://escuelavue.es/cursos/componentes-en-vue/',
+          scale: 2
+        },
+        {
+          name: 'Vue-Intermedio',
+          path: 'https://a.storyblok.com/f/87002/1280x720/9cabaa1374/aprender-vue-escuela-vue.jpg',
+          link: 'https://escuelavue.es/cursos/vue-intermedio/',
+          scale: 2
+        },
+        {
+          name: 'Vuex',
+          path: 'https://a.storyblok.com/f/87002/1280x720/918fc50d0b/curso-vuex-escuela-vue.jpg',
+          link: 'https://escuelavue.es/cursos/curso-vuex-desde-cero/',
+          scale: 2
+        },
+        {
+          name: 'Vue-Router',
+          path: 'https://a.storyblok.com/f/87002/1280x720/c23d81e2d2/escuela-vue-curso-vue-router.jpg',
+          link: 'https://escuelavue.es/cursos/curso-vue-router-espanol/',
+          scale: 2
+        },
+        {
+          name: 'Git',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/82c9c6b6-3e8e-4f17-ba05-be13c2a976e0.png',
+          link: 'https://ed.team/@edgarparucho/curso/git',
+          scale: 2
+        },
+        {
+          name: 'Scrum',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/d9a528dd-99d0-41d9-ac8e-de3a2f5505ca.png',
+          link: 'https://ed.team/@edgarparucho/curso/scrum',
+          scale: 2
+        },
+        {
+          name: 'Inglés',
+          path: 'https://edteam-media.s3.amazonaws.com/courses/small/4feb100b-5d47-4daf-b421-9983c5ecdfa8.png',
+          link: 'https://ed.team/@edgarparucho/curso/ingles',
+          scale: 2
+        },
+        {
+          name: 'Ver lista',
+          path: 'https://th.bing.com/th/id/R.20bd697b6464a048d2a962694be1122b?rik=l%2fRM%2fUwfcgXwzA&pid=ImgRaw&r=0',
+          link: 'https://ed.team/@edgarparucho',
+          scale: 2
+        }
+      ]
     },
     {
-      title: 'Problemas y Oportunidades',
-      img: require('@/assets/graphics/research-paper-bro.svg'),
-      subjects: [
+      title: 'Libros',
+      img: require('@/assets/graphics/book-lover-bro.svg'),
+      paragraphs: [
         {
-          subtitle: 'Innovador habitual',
-          text: `
-            Desde el inicio noté oportunidades de mejora en el sistema de gestión. La rutina era manejar datos con materiales
-            de oficina, hojas de cálculo de filas infinitas y una aplicación local usada como base de datos, pero no mucho más.
+          subject: '',
+          body: `
+            Cuando comencé a leer de forma habitual, abrí otra puerta al aprendizaje y otros mundos.
           `
         },
         {
-          subtitle: 'Camino libre',
-          text: `
-            Algunos piensan: "Si funciona, no lo toque", para mí, un problema es una oportunidad. Junto al consumo elevado de lápices,
-            bolígrafos, hojas, blocs y demás, venían problemas de seguridad de la información. Pero no habían iniciativas para abordar esto.
+          subject: '',
+          body: `
+            Aunque he disfrutado de varios géneros, en mi lista predominan temas de hábitos, aprendizaje, emprendimiento,
+            programación y diseño.
           `
         }
       ],
-      quote: { cite: '“Si hubiera preguntado a la gente que quería, hubieran dicho que caballos más rápidos”', author: 'Henry Ford' }
+      imgs: [
+        {
+          name: 'Shoe Dog',
+          path: 'https://th.bing.com/th/id/R.4a4ef59c691df87630b392738a122826?rik=lsbLc2wLXFccCA&riu=http%3a%2f%2fd28hgpri8am2if.cloudfront.net%2fbook_images%2fonix%2fcvr9781471146725%2fshoe-dog-9781471146725_hr.jpg&ehk=w8Arnz8HQKY59sCHk6M1GLX%2b3pTC9%2f4A9jyN9f%2bq1IU%3d&risl=&pid=ImgRaw&r=0',
+          scale: .7
+        },
+        {
+          name: 'Steve Jobs',
+          path: 'https://th.bing.com/th/id/R.e60a2965c4019f9594ebfc3995f431fc?rik=yn9u3WudyOYmPw&pid=ImgRaw&r=0',
+          scale: .7
+        },
+        {
+          name: 'Atomic Habits',
+          path: 'https://images-na.ssl-images-amazon.com/images/I/517-j7wV27L._SX342_.jpg',
+          scale: .7
+        },
+        {
+          name: 'Ultralearning',
+          path: 'https://th.bing.com/th/id/R.134a5f31d818e672de9a606e4b23bf2e?rik=SaPVPY8kJOTNEg&pid=ImgRaw&r=0',
+          scale: .7
+        },
+        {
+          name: 'Mastery',
+          path: 'https://th.bing.com/th/id/R.5a35404b829218d8c370fb20fc8c5e4b?rik=%2fXuajkdgWOtBjA&riu=http%3a%2f%2fassets.allenandunwin.com.s3.amazonaws.com%2fimages%2foriginal%2f9781846681561.jpg&ehk=VMcngzpYT4VFE4xl000h6uRImbzsTcpz8prwVbQERRI%3d&risl=&pid=ImgRaw&r=0',
+          scale: .7
+        }
+      ]
     },
     {
-      title: 'Creando soluciones',
-      img: require('@/assets/graphics/spreadsheets-bro.svg'),
-      subjects: [
+      title: 'Proyectos',
+      img: require('@/assets/graphics/science-bro.svg'),
+      paragraphs: [
         {
-          subtitle: 'El poder subestimado de Excel',
-          text: `
-            Me encanta aprender. Investigué sobre funciones, fórmulas y macros en Excel, desarrollando mi lógica inconscientemente. Pasé
-            de novato a avanzado en los primeros meses, permitiéndome crear propuestas para esos problemas.
+          subject: '',
+          body: `
+            Un proyecto crea oportunidades para resolver problemas, conectar conocimientos, y experimentar.
+            Esto ayuda con la transferencia o capacidad de aplicar lo que estudiamos en un entorno o proyecto real.
           `
         },
         {
-          subtitle: 'Primeros logros',
-          text: `
-            Orientado al objetivo, digitalizamos procesos enteros. Ofrecimos libros con tablas y gráficas de valor para superiores y clientes.
-            Tareas con correos diarios se automatizaron con Macros. El consumo de materiales de oficina bajó casi a cero.
+          subject: '',
+          body: `
+            He construido dos proyectos con estas características, tienen un valor diferente en mi carrera: Mantra y este sitio que funciona como Portafolio para futuros trabajos.
           `
         }
-      ],
-      quote: { cite: '“Dame seis horas para derribar un arbol y dedicaré las primeras cuatro a afilar el hacha”', author: 'Abraham Lincoln'}
+      ]
     },
     {
-      title: 'El resultado del cambio',
-      img: require('@/assets/graphics/business-deal-bro.svg'),
-      subjects: [
+      title: 'Tutoriales',
+      img: require('@/assets/graphics/online-learning-bro.svg'),
+      paragraphs: [
         {
-          subtitle: 'La oportunidad',
-          text: `
-            A los 10 meses, este contexto me llevó a uno de mis mayores retos, ser Supervisor de Help Desk. Estaba a cargo de 5 analistas, 2
-            jefes regionales y 30 técnicos. Respondía a la Coordinación de Operaciones, a la junta directiva y a cada cliente.
+          subject: '',
+          body: `
+            Puede parecer exagerado, pero este formato influyó mucho en mi cambio de perspectiva sobre el tiempo. Entre el sistema de
+            publicidades y entretenimiento, hay contenido valioso a nivel educativo dictado por entusiastas, academias, emprendedores,
+            profesionales y casi cualquier perfil, en un formato y tiempo que consumimos pero no controlamos a diario.
           `
         },
         {
-          subtitle: 'Sobre la transición',
-          text: `
-            Mi equipo materializó resultados positivos en indicadores y gestiones internas. Transmití parte de mis conocimientos y así
-            creamos mejores soluciones. Pero la dependencia sobre los libros de Excel demandaba un cambio a otro nivel: la tecnología web.
+          subject: '',
+          body: `
+            La declaración de la pandemia, ganas, disciplina y una plataforma ofreciendo esto, fue la fórmula para una nueva pasión.
+          `
+        },
+        {
+          subject: '',
+          body: `
+            Actualmente lo utilizo orientando el contenido explicitamente al objetivo, cuidando más la calidad del contenido, profundizando
+            sobre las bases y manteniendome actualizado técnicamente.
           `
         }
-      ],
-      quote: { cite: '“El logro no requiere una habilidad extraordinaria. El logro proviene de habilidades ordinarias aplicadas con extraordinaria persistencia”', author: 'Ralph Marston' }
-    },
-    {
-      title: 'La pandemia',
-      img: require('@/assets/graphics/blogging-bro.svg'),
-      subjects: [
-        {
-          subtitle: 'Confinamiento',
-          text: `
-            Me enamoré inmediatamente del desarrollo web. Desde la declaración de pandemia, enfoqué días y noches enteras en aprender y
-            lo mantuve hasta perder la noción del tiempo. Huía a la idea de haber desperdiciado el tiempo junto a mi nueva pasión.
-          `
-        },
-        {
-          subtitle: 'El cambio de todo',
-          text: `
-            Más que entender, sentí a que se refería Steve Jobs con su discurso de Stanford. Conecté con el rol de desarrollador a través de
-            errores, aprendizaje, experimentos y frustración. Aquí empecé a concebir un nuevo proyecto: Mantra (en ese momento, Edea).
-          `
-        }
-      ],
-      quote: { cite: '“La única forma de estar realmente satisfecho es hacer lo que consideres como un gran trabajo y la única forma de hacer un gran trabajo es hacer lo que amas”', author: 'Steve Jobs' }
-    },
-    {
-      title: 'Escalando',
-      img: require('@/assets/graphics/comfort-zone-bro.svg'),
-      subjects: [
-        {
-          subtitle: 'Imparable',
-          text: `
-            Había cambiado. Retomar actividad presencial lo hizo evidente, sobre todo por mi nueva y casi obsesiva percepción del tiempo.
-            Mantra cumplía funciones muy básicas en su versión 1 tras 5 meses. Tras presentarla, se fijó usarla a partir del nuevo año 2021.
-            Fue todo un éxito.
-          `
-        },
-        {
-          subtitle: 'Un nuevo camino',
-          text: `
-            Con un par de meses de anticipación, anuncié mi retiro. Era momento de dedicarme a mis objetivos de capacitación y oportunidades como desarrollador.
-            Entregué 3 versiones de Mantra y un departamento que mantuvo un nivel constante de mejora para cerrar una relación de 3 años y 7 meses de mutuo crecimiento.
-          `
-        },
-        {
-          subtitle: '¿Qué significó este proyecto?',
-          text: `
-            En palabras de sus usuarios, la solución que siempre se estuvo buscando. Fue el resultado de mi experiencia y la de mi equipo
-            materializada en una aplicación web, significó para mi un cambio personal y profesional, significó plasmar las ideas acumuladas
-            como un juego de engranajes, significó ensamblar mis habilidades, mi potencial y capacidad de aprender para implementar un
-            producto de calidad sin descuidar mis funciones originales, este proyecto fue para mi lo que quise hacer para mi equipo: un
-            Mantra.
-          `
-        }
-      ],
-      quote: {
-        cite: '“Ten el coraje de seguir a tu corazón e intuición. Ellos de alguna forma ya saben en lo que realmente quieres convertirte. Todo lo demás es secundario”',
-        author: 'Steve Jobs'
-      }
-    }  
+      ]
+    }
   ]
 }
