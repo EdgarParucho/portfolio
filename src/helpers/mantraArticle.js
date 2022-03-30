@@ -1,7 +1,7 @@
   export default {
   cover: require('@/assets/img/article_alliance.jpg'),
   title: { main: 'Lo que hice para Microfilms en', keyword: 'Venezuela' },
-  subtitle: 'Una transición a través de un proyecto',
+  subtitle: 'La transición a través de un proyecto',
   path: '/mantra',
   stages: [
     {

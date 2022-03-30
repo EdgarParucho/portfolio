@@ -29,7 +29,7 @@ export default [
   {
     title: 'Mejora continua',
     guidelines: [
-      'Superar las barreras personales. Retar sobre los límites personales.',
+      'Superar las barreras. Retar sobre los límites personales.',
       'Transmitir capacidad, potencial e identidad al proyecto.',
       'Aspirar, visualizar el resultado, ambicionar y perfeccionar por naturaleza.'
     ],
