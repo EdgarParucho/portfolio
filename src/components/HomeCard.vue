@@ -7,7 +7,7 @@
         </v-avatar>
       </div>
       <v-card-title>
-        Hola, soy&nbsp;<span class="accent--text">Edgar Parucho</span>
+        Hola, soy&nbsp;<span class="primary--text">Edgar Parucho</span>
       </v-card-title>
       <v-card-subtitle class="text-start">
         💘 Padre+esposo enamorado, 💻 desarrollador apasionado, 👨🏻‍🎓 estudiante incansable

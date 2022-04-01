@@ -1,15 +1,15 @@
 <template>
   <v-container>
     <v-card class="pa-2" elevation="5">
-      <v-img :src="article.cover" max-height="410" eager />
-      <v-card-title class="subtitle-1 font-weight-bold">
-        {{ article.title.main }}&nbsp;<span class="secondary--text">{{ article.title.keyword }}</span>
+      <v-card-title class="display-1 font-weight-bold">
+        {{ story.title.main }}&nbsp;<span class="info--text">{{ story.title.keyword }}</span>
       </v-card-title>
       <v-card-subtitle class="subtitle-1 text--primary">
-        {{ article.subtitle }}
+        {{ story.subtitle }}
       </v-card-subtitle>
+      <v-img :src="story.cover" max-height="410" eager />
       <v-card-actions>
-        <v-btn v-if="$router.history.current.path === '/'" :to="article.path" color="secondary" block>
+        <v-btn v-if="$router.history.current.path === '/'" :to="`story/${story.path}`" color="secondary" block>
           Leer
         </v-btn>
         <v-btn v-else to="/" color="error" block text>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'ArticleCard',
-  props: ['article']
+  name: 'StoryPreview',
+  props: ['story']
 }
 </script>

@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'SectionCard',
+  name: 'SectionPreview',
   props: ['section']
 }
 </script>

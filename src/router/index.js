@@ -4,9 +4,10 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Projects from '../views/Projects.vue'
 import Stack from '../views/Stack.vue'
-import Mantra from '../views/Mantra.vue'
-import Background from '../views/Background.vue'
-import Plans from '../views/Plans.vue'
+// import MantraStory from '../views/MantraStory.vue'
+// import BackgroundStory from '../views/BackgroundStory.vue'
+// import ManagementStory from '../views/ManagementStory.vue'
+import Story from '../views/Story.vue'
 
 Vue.use(VueRouter)
 
@@ -16,18 +17,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      section: false
-    },
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About,
-    meta: {
-      title: 'Más sobre mí',
-      subtitle: 'Lo básico a nivel personal',
-      icon: 'mdi-meditation',
-      section: true
+      type: 'index'
     },
   },
   {
@@ -35,10 +25,10 @@ const routes = [
     name: 'Projects',
     component: Projects,
     meta: {
-      title: 'Mi trabajo',
-      subtitle: 'Conoce mis proyectos y experiencia',
+      title: 'Proyectos',
+      subtitle: 'Conoce mi trabajo y experiencia',
       icon: 'mdi-crane',
-      section: true
+      type: 'section'
     },
   },
   {
@@ -46,34 +36,53 @@ const routes = [
     name: 'Stack',
     component: Stack,
     meta: {
-      title: 'Mis habilidades',
-      subtitle: 'Stack de desarrollo y herramientas',
+      title: 'Stack',
+      subtitle: 'Conocimientos y herramientas técnicas',
       icon: 'mdi-book-multiple',
-      section: true
+      type: 'section'
     },
   },
   {
-    path: '/mantra',
-    name: 'Mantra',
-    component: Mantra,
+    path: '/about',
+    name: 'About',
+    component: About,
     meta: {
-      section: false
-    }
+      title: 'Acerca de mí',
+      subtitle: 'Lo básico a nivel personal',
+      icon: 'mdi-meditation',
+      type: 'section'
+    },
   },
+  // {
+  //   path: '/mantra',
+  //   name: 'MantraStory',
+  //   component: MantraStory,
+  //   meta: {
+  //     type: 'story'
+  //   }
+  // },
+  // {
+  //   path: '/background',
+  //   name: 'BackgroundStory',
+  //   component: BackgroundStory,
+  //   meta: {
+  //     type: 'story'
+  //   }
+  // },
+  // {
+  //   path: '/management',
+  //   name: 'ManagementStory',
+  //   component: ManagementStory,
+  //   meta: {
+  //     type: 'story'
+  //   }
+  // },
   {
-    path: '/background',
-    name: 'Background',
-    component: Background,
+    path: '/story/:title',
+    name: 'Stories',
+    component: Story,
     meta: {
-      section: false
-    }
-  },
-  {
-    path: '/plans',
-    name: 'Plans',
-    component: Plans,
-    meta: {
-      section: false
+      type: 'story'
     }
   }
 ]

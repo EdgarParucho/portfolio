@@ -1,21 +1,13 @@
 <template>
   <v-app>
-    <v-bottom-navigation v-if="mobileBreakpoint" app color="secondary">
+    <v-bottom-navigation v-if="mobileBreakpoint" app color="primary">
       <v-btn to="/" icon>
         <span>Inicio</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn to="/projects" icon>
-        <span>Proyectos</span>
-        <v-icon>mdi-crane</v-icon>
-      </v-btn>
-      <v-btn to="/about" icon>
-        <span>Acerca de</span>
-        <v-icon>mdi-meditation</v-icon>
-      </v-btn>
-      <v-btn to="/stack" icon>
-        <span>Stack</span>
-        <v-icon>mdi-book-multiple</v-icon>
+      <v-btn v-for="section, i of sections" :key="i" :to="section.path" icon>
+        <span>{{ section.meta.title }}</span>
+        <v-icon>{{ section.meta.icon }}</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
@@ -26,17 +18,17 @@
         <v-icon left>mdi-home</v-icon>
         Inicio
       </v-btn>
-      <v-btn class="mx-1" to="/projects" color="primary" text rounded>
-        <v-icon left>mdi-crane</v-icon>
-        Proyectos
-      </v-btn>
-      <v-btn class="mx-1" to="/about" color="primary" text rounded>
-        <v-icon left>mdi-meditation</v-icon>
-        Acerca de
-      </v-btn>
-      <v-btn class="mx-1" to="/stack" color="primary" text rounded>
-        <v-icon left>mdi-book-multiple</v-icon>
-        Stack
+      <v-btn
+        v-for="section, i of sections"
+        :key="i"
+        :to="section.path"
+        :outlined="$router.history.current.path !== section.path"
+        class="mx-1"
+        color="primary"
+        rounded
+      >
+        <v-icon left>{{ section.meta.icon }}</v-icon>
+        {{ section.meta.title }}
       </v-btn>
     </v-app-bar>
     
@@ -63,6 +55,9 @@ export default {
   computed: {
     mobileBreakpoint () {
       return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs
+    },
+    sections () {
+      return this.$router.options.routes.filter(route => route.meta.type === 'section')
     }
   }
 };
