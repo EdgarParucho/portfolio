@@ -71,7 +71,7 @@ export default {
           md: 2
         },
         {
-          name: 'Vue-Componentes',
+          name: 'Vue JS: Componentes',
           path: 'https://a.storyblok.com/f/87002/1280x720/dcf7ac0339/vue-components-escuela-vue.jpg',
           link: 'https://escuelavue.es/cursos/componentes-en-vue/',
           scale: 2,
@@ -79,7 +79,7 @@ export default {
           md: 2
         },
         {
-          name: 'Vue-Intermedio',
+          name: 'Vue JS: Intermedio',
           path: 'https://a.storyblok.com/f/87002/1280x720/9cabaa1374/aprender-vue-escuela-vue.jpg',
           link: 'https://escuelavue.es/cursos/vue-intermedio/',
           scale: 2,
@@ -157,7 +157,7 @@ export default {
       quote: null,
       images: [
         {
-          name: 'Shoe Dog',
+          name: 'P. Knight - Shoe Dog',
           path: 'https://th.bing.com/th/id/R.4a4ef59c691df87630b392738a122826?rik=lsbLc2wLXFccCA&riu=http%3a%2f%2fd28hgpri8am2if.cloudfront.net%2fbook_images%2fonix%2fcvr9781471146725%2fshoe-dog-9781471146725_hr.jpg&ehk=w8Arnz8HQKY59sCHk6M1GLX%2b3pTC9%2f4A9jyN9f%2bq1IU%3d&risl=&pid=ImgRaw&r=0',
           scale: .7,
           link: null,
@@ -165,7 +165,7 @@ export default {
           md: 2
         },
         {
-          name: 'Steve Jobs',
+          name: 'W. Isaacson - Steve Jobs',
           path: 'https://th.bing.com/th/id/R.e60a2965c4019f9594ebfc3995f431fc?rik=yn9u3WudyOYmPw&pid=ImgRaw&r=0',
           scale: .7,
           link: null,
@@ -173,7 +173,7 @@ export default {
           md: 2
         },
         {
-          name: 'Atomic Habits',
+          name: 'J. Clear - Atomic Habits',
           path: 'https://images-na.ssl-images-amazon.com/images/I/517-j7wV27L._SX342_.jpg',
           scale: .7,
           link: null,
@@ -181,7 +181,7 @@ export default {
           md: 2
         },
         {
-          name: 'Ultralearning',
+          name: 'S. Young - Ultralearning',
           path: 'https://th.bing.com/th/id/R.134a5f31d818e672de9a606e4b23bf2e?rik=SaPVPY8kJOTNEg&pid=ImgRaw&r=0',
           scale: .7,
           link: null,
@@ -189,7 +189,7 @@ export default {
           md: 2
         },
         {
-          name: 'Mastery',
+          name: 'R. Greene - Mastery',
           path: 'https://th.bing.com/th/id/R.5a35404b829218d8c370fb20fc8c5e4b?rik=%2fXuajkdgWOtBjA&riu=http%3a%2f%2fassets.allenandunwin.com.s3.amazonaws.com%2fimages%2foriginal%2f9781846681561.jpg&ehk=VMcngzpYT4VFE4xl000h6uRImbzsTcpz8prwVbQERRI%3d&risl=&pid=ImgRaw&r=0',
           scale: .7,
           link: null,

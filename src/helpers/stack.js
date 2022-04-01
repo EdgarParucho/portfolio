@@ -1,8 +1,9 @@
 export default {
   path: '/stack',
-  title: { main: 'Fuentes de', keyword: 'aprendizaje' },
-  subtitle: 'Acerca de mi formación',
-  cover: require('@/assets/img/article_knowledge.jpg'),
+  title: 'Stack',
+  subtitle: 'Conocimientos y herramientas técnicas',
+  icon: 'mdi-book-multiple',
+  cover: null,
   chapters: [
     {
       graphic: require('@/assets/graphics/prototyping-process-bro.svg'),

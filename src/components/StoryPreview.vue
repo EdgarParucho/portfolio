@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card class="pa-2" elevation="5">
+    <v-card class="pa-2" elevation="5" max-width="480">
       <v-card-title class="display-1 font-weight-bold">
         {{ story.title.main }}&nbsp;<span class="info--text">{{ story.title.keyword }}</span>
       </v-card-title>

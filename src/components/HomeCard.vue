@@ -20,7 +20,16 @@
       <v-card-actions class="justify-start">
         <v-tooltip  v-for="link, i of links" :key="i" bottom color="secondary">
           <template v-slot:activator="{ on }">
-            <v-btn v-on="on" icon :large="mobileBreakpoint" :x-large="!mobileBreakpoint" :href="link.to" target="_blank" color="secondary">
+            <v-btn
+              class="animate__pulse"
+              v-on="on"
+              icon
+              :large="isMobile"
+              :x-large="!isMobile"
+              :href="link.to"
+              target="_blank"
+              color="secondary"
+            >
               <v-icon>{{ link.icon }}</v-icon>
             </v-btn>
           </template>
@@ -34,7 +43,7 @@
 <script>
   export default {
     name: 'HomeCard',
-    props: ['mobileBreakpoint'],
+    props: ['isMobile'],
     data: () => ({
       links: [
         { icon: 'mdi-linkedin', id: 'linkedin.com/in/parucho', to: 'https://www.linkedin.com/in/parucho/' },

@@ -1,6 +1,7 @@
 export default {
   path: '/about',
-  title: { main: 'Acerca de mi', keyword: null },
+  title: 'Acerca de mi',
+  icon: 'mdi-meditation',
   subtitle: 'Lo básico a nivel personal',
   cover: null,
   chapters: [

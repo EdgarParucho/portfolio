@@ -1,23 +1,23 @@
 <template>
   <v-container>
     <!-- Story's preview card -->
-    <section-preview :section="$router.history.current" />
+    <section-preview :section="section" />
     <!-- Chapters -->
-   <Chapter v-for="(chapter, index) of story.chapters" :chapter="chapter" :key="index" :isMobile="isMobile" :index="index" />
+   <Chapter v-for="(chapter, index) of section.chapters" :chapter="chapter" :key="index" :isMobile="isMobile" :index="index" />
 
   </v-container>
 </template>
 
 <script>
 import SectionPreview from '@/components/SectionPreview'
-import story from '@/helpers/stack.js'
+import section from '@/helpers/stack.js'
 import Chapter from '@/components/Chapter'
 export default {
   name: 'Stack',
   components: { SectionPreview, Chapter },
   data () {
     return {
-      story
+      section
     }
   },
   computed: {

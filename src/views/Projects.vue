@@ -1,13 +1,13 @@
 <template>
   <v-container>
-    <section-preview :section="$router.history.current" />
-    <div v-for="project, k of projects" :key="k">
+    <section-preview :section="projects" />
+    <div v-for="project, k of projects.items" :key="k">
       <h1 class="display-4">{{ project.title }}</h1>
       <h4 class="ml-2 headline">{{ project.subtitle }}</h4>
       <v-row>
         <v-col
           class="d-flex child-flex"
-          :cols="mobileBreakpoint ? 12 : 3"
+          :cols="isMobile ? 12 : 3"
           v-for="image, k in project.images"
           :key="k"
         >
@@ -23,11 +23,11 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col :cols="mobileBreakpoint ? 12 : 6">
+        <v-col :cols="isMobile ? 12 : 6">
           <v-card-subtitle class="text-center headline">Acerca del proyecto</v-card-subtitle>
           <project-about :project="project"></project-about>
         </v-col>
-        <v-col :cols="mobileBreakpoint ? 12 : 6">
+        <v-col :cols="isMobile ? 12 : 6">
           <v-card-subtitle class="text-center headline">Características generales</v-card-subtitle>
           <project-specs :project="project"></project-specs>
         </v-col>
@@ -51,7 +51,7 @@ import ProjectSpecs from '@/components/ProjectSpecs.vue'
       }
     },
     computed: {
-      mobileBreakpoint () {
+      isMobile () {
         return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs
       }
     }

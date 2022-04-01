@@ -53,25 +53,31 @@
             :cols="isMobile ? img.sm : img.md
             "
           >
-            <v-hover>
-              <template v-slot:default="{ hover }">
-                <v-card elevation="3">
-                  <v-img :src="img.path" :aspect-ratio="img.scale || 1" :alt="img.name" />
-                  <v-fade-transition>
-                    <v-overlay
-                      v-if="hover && img.link"
-                      color="secondary"
-                      absolute
-                    >
-                      <v-btn :href="img.link" target="_blank" x-small color="secondary">
-                        {{ img.name }}
-                        <v-icon right>mdi-link</v-icon>
-                      </v-btn>
-                    </v-overlay>
-                  </v-fade-transition>
-                </v-card>
+            <v-tooltip color="secondary" top>
+              <template v-slot:activator="{ on }">
+                <div v-on="on">
+                  <v-hover>
+                    <template v-slot:default="{ hover }">
+                      <v-card elevation="3">
+                        <v-img :src="img.path" :aspect-ratio="img.scale || 1" :alt="img.name" />
+                        <v-fade-transition>
+                          <v-overlay
+                            v-if="hover"
+                            color="secondary"
+                            absolute
+                          >
+                            <v-btn v-if="img.link" :href="img.link" target="_blank" x-small color="primary">
+                              <v-icon>mdi-link</v-icon>
+                            </v-btn>
+                          </v-overlay>
+                        </v-fade-transition>
+                      </v-card>
+                    </template>
+                  </v-hover>
+                </div>
               </template>
-            </v-hover>
+              {{ img.name }}
+            </v-tooltip>
           </v-col>
         </v-row>
       </v-col>

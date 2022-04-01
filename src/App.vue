@@ -1,13 +1,13 @@
 <template>
   <v-app>
-    <v-bottom-navigation v-if="mobileBreakpoint" app color="primary">
+    <v-bottom-navigation v-if="isMobile" app color="primary">
       <v-btn to="/" icon>
         <span>Inicio</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
       <v-btn v-for="section, i of sections" :key="i" :to="section.path" icon>
-        <span>{{ section.meta.title }}</span>
-        <v-icon>{{ section.meta.icon }}</v-icon>
+        <span>{{ section.title }}</span>
+        <v-icon>{{ section.icon }}</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
@@ -27,8 +27,8 @@
         color="primary"
         rounded
       >
-        <v-icon left>{{ section.meta.icon }}</v-icon>
-        {{ section.meta.title }}
+        <v-icon left>{{ section.icon }}</v-icon>
+        {{ section.title }}
       </v-btn>
     </v-app-bar>
     
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-
+import { mapState } from 'vuex'
 export default {
   name: 'App',
 
@@ -53,11 +53,9 @@ export default {
     //
   }),
   computed: {
-    mobileBreakpoint () {
+    ...mapState(['sections', 'stories']),
+    isMobile () {
       return this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs
-    },
-    sections () {
-      return this.$router.options.routes.filter(route => route.meta.type === 'section')
     }
   }
 };

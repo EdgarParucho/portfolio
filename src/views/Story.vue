@@ -1,11 +1,7 @@
 <template>
   <v-container>
 
-    <v-row>
-      <v-col :cols="isMobile ? 12 : 4">
-        <story-preview :story="story" />
-      </v-col>
-    </v-row>
+    <story-preview :story="story" />
 
     <!-- <story-introduction :story="story" /> -->
     <v-row align="center">
@@ -30,25 +26,25 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import StoryPreview from '@/components/StoryPreview'
 import Chapter from '@/components/Chapter'
-import stories from '@/helpers/stories.js'
 export default {
   name: 'MantraStory',
   components: { StoryPreview, Chapter },
   data () {
     return {
-      stories
     }
   },
   computed: {
+    ...mapState(['stories']),
     isMobile () {
       return this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.sm
     },
     story () {
-      const current = this.$router.currentRoute.params.title
-      const match = this.stories.find(story => story.path === current)
-      return match
+      const storyPath = this.$router.currentRoute.params.title
+      const storyContent = this.stories.find(story => story.path === storyPath)
+      return storyContent
     }
   }
 }
