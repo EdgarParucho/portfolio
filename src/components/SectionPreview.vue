@@ -1,12 +1,12 @@
 <template>
   <v-container>
     <v-card class="my-5" dark align="end" color="primary" max-width="400">
-      <v-icon color="white" size="100">{{ section.meta.icon }}</v-icon>
+      <v-icon color="white" size="100">{{ section.icon }}</v-icon>
       <v-card-title>
-        {{ section.meta.title }}
+        {{ section.title }}
       </v-card-title>
       <v-card-subtitle class="white--text text-start">
-        {{ section.meta.subtitle }}
+        {{ section.subtitle }}
       </v-card-subtitle>
       <v-card-actions>
         <v-btn v-if="$router.history.current.path === '/'" outlined :to="section.path" block>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'SectionCard',
+  name: 'SectionPreview',
   props: ['section']
 }
 </script>
