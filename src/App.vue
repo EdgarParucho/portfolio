@@ -68,7 +68,8 @@ export default {
     font-size: 27px;
   }
   .blob {
-    background-image: url('./assets/graphics/blob-haikei.svg');
+    /* background-image: url('./assets/graphics/blob-haikei.svg'); */
+    background-image: url('./assets/graphics/blob-haikei2.svg');
     background-size: 100vw;
   }
   .blob-scene {

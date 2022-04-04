@@ -8,11 +8,11 @@ export default {
       La historia de este proyecto define gran parte de mi identidad.
     `,
     `
-      Curiosidad, perseverancia, creatividad e innovación son algunas de las características que, pese
+      Curiosidad, perseverancia, creatividad e innovación son algunas de las habilidades que, pese
       a ser habituales, me enseñaron que el poder de evolucionar nace y crece desde cada uno.
     `,
     `
-      Brevemente, te señalo las étapas que dieron sentido a Mantra y marcaron la ruta que hoy sigo.
+      Brevemente, te señalo las etapas que dieron sentido a Mantra y marcaron la ruta que hoy sigo.
     `
   ],
   chapters: [
@@ -85,8 +85,8 @@ export default {
           about: 'El poder subestimado de Excel',
           paragraphs: [
             `
-            Me encanta aprender. Investigué sobre funciones, fórmulas y macros en Excel, desarrollando mi lógica inconscientemente. Pasé
-            de novato a avanzado en los primeros meses, permitiéndome crear propuestas para esos problemas.
+            Me encanta aprender. Investigué sobre funciones, fórmulas y macros en Excel. Pasé de novato a avanzado en
+            los primeros meses, permitiéndome crear propuestas para esos problemas y desarrollando mi lógica inconscientemente.
             `
           ]
         },
@@ -95,7 +95,7 @@ export default {
           paragraphs: [
             `
             Orientado al objetivo, digitalizamos procesos enteros, creamos libros de Excel con tablas y gráficas de valor para superiores y clientes (ver anexos).
-            Tareas con correos diarios se automatizaron con Macros. El consumo de materiales de oficina bajó casi a cero.
+            Tareas con correos diarios se automatizaron con macros. El consumo de materiales de oficina bajó casi a cero.
             `
           ]
         }
@@ -130,7 +130,7 @@ export default {
           paragraphs: [
             `
             Mi equipo materializó resultados positivos en indicadores y gestiones internas. Transmití parte de mis conocimientos y así
-            creamos mejores soluciones. Pero la dependencia sobre los libros de Excel demandaba un cambio a otro nivel: la tecnología web.
+            creamos mejores soluciones. Pero la dependencia sobre los libros de Excel demandaba un ambio a otro nivel: la tecnología web.
             `
           ]
         },
@@ -150,8 +150,8 @@ export default {
           about: 'Confinamiento',
           paragraphs: [
             `
-            Me enamoré inmediatamente del desarrollo web. Desde la declaración de pandemia, enfoqué días y noches enteras en aprender y
-            lo mantuve hasta perder la noción del tiempo. Huía a la idea de haber desperdiciado el tiempo junto a mi nueva pasión.
+            Desde la declaración de pandemia, enfoqué días y noches enteras en aprender y lo mantuve hasta perder la noción del tiempo.
+            Huía a la idea de haber desperdiciado el tiempo junto a mi nueva pasión. Me enamoré inmediatamente del desarrollo web.
             `
           ]
         },
@@ -160,7 +160,7 @@ export default {
           paragraphs: [
             `
             Más que entender, sentí a que se refería Steve Jobs con su discurso de Stanford. Conecté con el rol de desarrollador a través de
-            errores, aprendizaje, experimentos y frustración. Aquí empecé a concebir un nuevo proyecto: Mantra (en ese momento, Edea).
+            errores, aprendizaje, experimentos y frustración. Aquí empecé a concebir un nuevo proyecto: Mantra.
             `
           ]
         },
@@ -201,10 +201,9 @@ export default {
           paragraphs: [
             `
             En palabras de sus usuarios, la solución que siempre se estuvo buscando. Fue el resultado de mi experiencia y la de mi equipo
-            materializada en una aplicación web, significó para mi un cambio personal y profesional, significó plasmar las ideas acumuladas
-            como un juego de engranajes, significó ensamblar mis habilidades, mi potencial y capacidad de aprender para implementar un
-            producto de calidad sin descuidar mis funciones originales, este proyecto fue para mi lo que quise hacer para mi equipo: un
-            Mantra.
+            materializada en una aplicación web, significó para mi un cambio personal y profesional, también plasmar ideas acumuladas
+            como un juego de engranajes, significó ensamblar mis habilidades, potencial y capacidad de aprender para implementar un
+            producto de calidad, este proyecto fue para mi lo que quise hacer para mi equipo: un Mantra.
             `
           ]
         }
