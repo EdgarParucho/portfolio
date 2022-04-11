@@ -26,8 +26,13 @@ export default {
           about: null,
           paragraphs: [
             `
-              Una de las primeras decisiones que tomé al dedicarme de lleno al desarrollo web, fue suscribirme a una plataforma eductativa.
-              Esto para mi funciona como para un atleta un gimnasio, como una base en la que, con disciplina, adquiero y refuerzo habilidades.
+              Una de mis primeras decisiones al dedicarme de lleno al desarrollo fue tomar las riendas de mi educación.
+              Descarté fuentes que no se ajustaban a mis objetivos y basé este aspecto principalmente en dos.
+            `,
+            `
+              Tengo mucho que agradecer a estas dos plataformas: EDteam y Escuela Vue. Son para mí lo que la biblioteca de Alejandría fue
+              para un amante del conocimiento. Además, siento admiración por sus creadores, Álvaro Felipe y Juán Adrés Nuñez, a quienes
+              sigo de cerca y considero prácticamente mentores.
             `,
             `
               He completado cursos de desarrollo web y su contexto: diseño, metodologías ágiles, herramientas complementarias, etc.
